@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Document Extractor</title>
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --bg: #0f172a;
+            --card: #1e293b;
+            --text: #f8fafc;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            padding: 2rem;
+        }
+        .card {
+            background-color: var(--card);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        h1 { text-align: center; margin-bottom: 0.5rem; }
+        p.subtitle { text-align: center; color: #94a3b8; margin-bottom: 2rem; }
+        
+        #upload-area {
+            border: 2px dashed #475569;
+            border-radius: 0.75rem;
+            padding: 3rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        #upload-area:hover { border-color: var(--primary); background: #334155; }
+        #upload-area.active { border-color: var(--primary); background: #334155; }
+        
+        .status-container { margin-top: 1.5rem; display: none; }
+        .status-item { margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
+        .spinner {
+            width: 1.25rem; height: 1.25rem;
+            border: 3px solid #64748b; border-top: 3px solid var(--primary);
+            border-radius: 50%; animation: spin 1s linear infinite;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        
+        .result-container { margin-top: 2rem; display: none; }
+        
+        /* Collapsible Raw Text Tray Styles */
+        details {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+        summary {
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            font-weight: 600;
+            user-select: none;
+            background: #334155;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        summary::-webkit-details-marker { display: none; }
+        summary::after {
+            content: "▼";
+            font-size: 0.8rem;
+            transition: transform 0.2s;
+        }
+        details[open] summary::after {
+            transform: rotate(180deg);
+        }
+        #raw-text-output {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 1rem;
+            margin: 0;
+            max-height: 200px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+            font-family: monospace;
+            font-size: 0.85rem;
+            border-top: 1px solid #334155;
+        }
+
+        pre {
+            background: #000; padding: 1rem; border-radius: 0.5rem;
+            overflow-x: auto; font-size: 0.9rem; color: #10b981;
+        }
+        button {
+            background-color: var(--primary); color: white; border: none;
+            padding: 0.75rem 1.5rem; border-radius: 0.5rem; cursor: pointer;
+            width: 100%; font-size: 1rem; font-weight: 600; margin-top: 1rem;
+        }
+        button:disabled { background-color: #475569; cursor: not-allowed; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>📄 AI Doc Extractor</h1>
+            <p class="subtitle">Upload an invoice to get structured JSON data</p>
+
+            <div id="upload-area">
+                <p id="file-name">Drag & Drop your file here or click to browse</p>
+                <input type="file" id="file-input" hidden accept="image/*">
+            </div>
+
+            <button id="process-btn" disabled>Start Processing</button>
+
+            <div class="status-container" id="status-box">
+                <div class="status-item">
+                    <div class="spinner"></div>
+                    <span id="status-text">Uploading and Processing...</span>
+                </div>
+            </div>
+
+            <div class="result-container" id="result-box">
+                <details id="raw-text-tray">
+                    <summary>View Raw Extracted Text</summary>
+                    <div id="raw-text-output"></div>
+                </details>
+
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3>Result JSON:</h3>
+                    <button id="copy-btn" style="width: auto; margin: 0; padding: 0.25rem 0.75rem; font-size: 0.8rem;">Copy</button>
+                </div>
+                <pre id="json-output"></pre>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const uploadArea = document.getElementById('upload-area');
+        const fileInput = document.getElementById('file-input');
+        const fileName = document.getElementById('file-name');
+        const processBtn = document.getElementById('process-btn');
+        const statusBox = document.getElementById('status-box');
+        const resultBox = document.getElementById('result-box');
+        const jsonOutput = document.getElementById('json-output');
+        const rawTextOutput = document.getElementById('raw-text-output');
+        const rawTextTray = document.getElementById('raw-text-tray');
+        const copyBtn = document.getElementById('copy-btn');
+
+        let selectedFile = null;
+
+        uploadArea.onclick = () => fileInput.click();
+
+        uploadArea.ondragover = (e) => { e.preventDefault(); uploadArea.classList.add('active'); };
+        uploadArea.ondragleave = () => uploadArea.classList.remove('active');
+        uploadArea.ondrop = (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('active');
+            handleFile(e.dataTransfer.files[0]);
+        };
+
+        fileInput.onchange = (e) => handleFile(e.target.files[0]);
+
+        function handleFile(file) {
+            if (file) {
+                selectedFile = file;
+                fileName.textContent = `Selected: ${file.name}`;
+                processBtn.disabled = false;
+                resultBox.style.display = 'none';
+            }
+        }
+
+        processBtn.onclick = async () => {
+            if (!selectedFile) return;
+
+            processBtn.disabled = true;
+            statusBox.style.display = 'block';
+            resultBox.style.display = 'none';
+            rawTextTray.open = false;
+
+            const formData = new FormData();
+            formData.append('file', selectedFile);
+
+            try {
+                const response = await fetch('/process', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (!response.ok) throw new Error(`Server error: ${response.statusText}`);
+
+                const data = await response.json();
+                
+                // Handle new backend structure
+                const rawText = data.raw_text || "No raw text available.";
+                const structuredData = data.structured_data || data;
+
+                rawTextOutput.textContent = rawText;
+                jsonOutput.textContent = JSON.stringify(structuredData, null, 2);
+                
+                resultBox.style.display = 'block';
+            } catch (err) {
+                alert("Error: " + err.message);
+            } finally {
+                statusBox.style.display = 'none';
+                processBtn.disabled = false;
+            }
+        };
+
+        copyBtn.onclick = () => {
+            navigator.clipboard.writeText(jsonOutput.textContent);
+            copyBtn.textContent = "Copied!";
+            setTimeout(() => copyBtn.textContent = "Copy", 2000);
+        };
+    </script>
+</body>
+</html>
