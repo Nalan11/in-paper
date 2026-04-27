@@ -356,3 +356,88 @@ git branch -M main
 git status
 git remote add origin https://github.com/Nalan11/in-paper.git
 git push -u origin main
+git add .
+git status
+git commit -m "initial commit"
+git config user.email "nalanlearnings@gmail.com"
+git config user.name "Nalan11"
+git commit -m "initial commit"
+git config --global user.name "Your Name"
+git branch -M main
+git status
+git push -u origin main
+exit
+gemini
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.25 --max-num-batched-tokens 512 --no-enable-prefix-caching --max-model-len 1024 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8001
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.4 --max-model-len 8096 --max-num-batched-tokens 2048 --no-enable-prefix-caching --mm-processor-cache-gb 0 --port 8000
+python app.py 
+git status
+source vllm_engine/bin/activate
+source vllm_engine/bin/activate
+python app.py 
+exit
+pip install seaborn --dry-run
+uv pip install seaborn --dry-run
+uv pip install seaborn
+exit
+uv pip install beautifulsoup4 --dry-run
+gemini
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.25 --max-num-batched-tokens 512 --no-enable-prefix-caching --max-model-len 1024 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8001
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.4
+gemini
+exit
+gemini
+clear
+gemini
+clea
+clear
+exit
+gemini
+source vllm_engine/bin/activate
+source vllm_engine/bin/activate
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.25 --max-num-batched-tokens 512 --no-enable-prefix-caching --max-model-len 1024 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8001
+exit
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.4
+--max-model-len 8096
+--max-num-batched-tokens 2048 --no-enable-prefix-caching --mm-processor-cache-gb 0 --port 8000
+exit
+source vllm_engine/bin/activate
+source vllm_engine/bin/activate
+python app2.py
+python app2.py
+python app2.py
+gemini
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.25 --max-num-batched-tokens 512 --no-enable-prefix-caching --max-model-len 2048 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8001
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.4 --max-model-len 8096 --max-num-batched-tokens 2048 --no-enable-prefix-caching --mm-processor-cache-gb 0 --port 8000
+python app2.py
+gemini
+exit
+gemini
+gemini
+exit
+gemini
+source vllm_engine/bin/activate
+source vllm_engine/bin/activate
+python  app2.py 
+source vllm_engine/bin/activate
+python  app2.py 
+exit
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.25 --max-num-batched-tokens 512 --no-enable-prefix-caching --max-model-len 1024 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8001
+clear
+python app2.py
+python --version
+python app.py
+python app2.py
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.25 --max-num-batched-tokens 512 --no-enable-prefix-caching --max-model-len 1024 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8001
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.4 --max-model-len 8096 --max-num-batched-tokens 2048 --no-enable-prefix-caching --mm-processor-cache-gb 0 --port 8000
+python app.py
+python app.py
+python app2.py
+python app.py
+exit
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.25 --max-num-batched-tokens 512 --no-enable-prefix-caching --max-model-len 1024 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8001
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.25 --max-num-batched-tokens 512 --no-enable-prefix-caching --max-model-len 2048 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8001
+python app2.py
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.4 --max-model-len 8096 --max-num-batched-tokens 2048 --no-enable-prefix-caching --mm-processor-cache-gb 0 --port 8000
+gemini
+git status

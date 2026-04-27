@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Document Extractor V2</title>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-hover: #4f46e5;
+            --bg: #0f172a;
+            --card: #1e293b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --danger: #ef4444;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --border: #334155;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card {
+            background-color: var(--card);
+            border-radius: 1rem;
+            padding: 2rem;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        /* Upload Section */
+        .upload-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        @media (max-width: 900px) {
+            .upload-grid { grid-template-columns: 1fr; }
+        }
+
+        #upload-area {
+            border: 2px dashed var(--border);
+            border-radius: 1rem;
+            padding: 3rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: rgba(30, 41, 59, 0.5);
+            min-height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #upload-area:hover {
+            border-color: var(--primary);
+            background: rgba(79, 70, 229, 0.1);
+        }
+
+        #upload-area.active {
+            border-color: var(--success);
+            background: rgba(16, 185, 129, 0.1);
+        }
+
+        /* Preview Container */
+        .preview-container {
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            background: #0f172a;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #image-preview {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            display: none;
+        }
+
+        .preview-placeholder {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            text-align: center;
+        }
+
+        .timer-display {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 2.5rem;
+            color: var(--primary);
+            text-align: center;
+            margin: 1rem 0;
+            font-weight: 700;
+        }
+
+        button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.2s;
+            font-size: 1.125rem;
+        }
+
+        button:hover { background-color: var(--primary-hover); }
+        button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+        /* Status & Timings */
+        .stats-bar {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            justify-content: center;
+            border-top: 1px solid var(--border);
+            padding-top: 1rem;
+        }
+
+        .stat-item span { color: var(--text); font-weight: 600; }
+
+        /* Result Layout */
+        .result-layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .validation-banner {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid var(--danger);
+            color: #fca5a5;
+            padding: 1rem;
+            border-radius: 0.75rem;
+            margin-bottom: 1.5rem;
+            display: none;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .data-label { color: var(--text-muted); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        .data-value { font-size: 1rem; margin-bottom: 0.75rem; font-weight: 500; }
+
+        /* Table Styles */
+        .table-wrapper {
+            overflow-x: auto;
+            margin-top: 1.5rem;
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th { background: #334155; padding: 0.75rem 1rem; font-size: 0.875rem; }
+        td { padding: 0.75rem 1rem; border-top: 1px solid var(--border); font-size: 0.875rem; }
+
+        .financials-summary {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 2px solid var(--border);
+            text-align: right;
+        }
+
+        .total-row { font-size: 1.5rem; font-weight: 700; color: var(--success); }
+
+        /* Tabs */
+        .tabs { display: flex; gap: 1rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border); }
+        .tab { padding: 0.5rem 1rem; cursor: pointer; color: var(--text-muted); }
+        .tab.active { color: var(--primary); border-bottom: 2px solid var(--primary); font-weight: 600; }
+
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        pre {
+            background: #000;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            overflow-x: auto;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.875rem;
+            color: #10b981;
+        }
+
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>AI Doc Intelligence V2</h1>
+        <p style="color: var(--text-muted)">High-precision extraction with nested schema & math validation</p>
+    </header>
+
+    <div class="card">
+        <div class="upload-grid">
+            <div class="upload-controls">
+                <div id="upload-area">
+                    <p id="file-name" style="font-size: 1.125rem; font-weight: 500;">Drop Invoice Image Here</p>
+                    <p style="color: var(--text-muted); font-size: 0.875rem; margin-top: 0.5rem;">Click to browse or drag & drop</p>
+                    <input type="file" id="file-input" hidden accept="image/*">
+                </div>
+                
+                <div class="processing-controls" style="margin-top: 2rem;">
+                    <div class="timer-display" id="timer">00:00.0</div>
+                    <button id="process-btn" disabled>Process Document</button>
+                </div>
+            </div>
+
+            <div class="preview-container">
+                <div class="preview-placeholder" id="preview-placeholder">Image Preview will appear here</div>
+                <img id="image-preview" alt="Invoice Preview">
+            </div>
+        </div>
+
+        <div class="stats-bar hidden" id="timings-bar">
+            <div class="stat-item">VLM (OCR): <span id="vlm-time">0s</span></div>
+            <div class="stat-item">LLM (Extraction): <span id="llm-time">0s</span></div>
+            <div class="stat-item">Total Pipeline: <span id="total-time">0s</span></div>
+        </div>
+    </div>
+
+    <div id="results-area" class="hidden">
+        <div id="validation-error" class="validation-banner">
+            <strong>⚠️ Validation Warning:</strong>
+            <ul id="error-list" style="margin: 0.5rem 0 0 1.5rem;"></ul>
+        </div>
+
+        <div class="tabs">
+            <div class="tab active" onclick="switchTab('visual')">Visual View</div>
+            <div class="tab" onclick="switchTab('raw')">OCR Analysis</div>
+            <div class="tab" onclick="switchTab('json')">Structured JSON</div>
+        </div>
+
+        <!-- Visual View -->
+        <div id="tab-visual" class="tab-content active">
+            <div class="grid-2">
+                <div class="card" style="margin-bottom: 0;">
+                    <h3 style="margin-top: 0">Document Details</h3>
+                    <div class="grid-2">
+                        <div>
+                            <div class="data-label">Type</div>
+                            <div class="data-value" id="doc-type">-</div>
+                        </div>
+                        <div>
+                            <div class="data-label">Number</div>
+                            <div class="data-value" id="doc-number">-</div>
+                        </div>
+                        <div>
+                            <div class="data-label">Date</div>
+                            <div class="data-value" id="doc-date">-</div>
+                        </div>
+                        <div>
+                            <div class="data-label">Due Date</div>
+                            <div class="data-value" id="doc-due">-</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card" style="margin-bottom: 0;">
+                    <h3 style="margin-top: 0">Parties</h3>
+                    <div class="grid-2">
+                        <div>
+                            <div class="data-label">Vendor</div>
+                            <div class="data-value" id="vendor-name" style="font-weight: 700">-</div>
+                            <div class="data-label">Address</div>
+                            <div class="data-value" id="vendor-address" style="font-size: 0.875rem">-</div>
+                        </div>
+                        <div>
+                            <div class="data-label">Client</div>
+                            <div class="data-value" id="client-name" style="font-weight: 700">-</div>
+                            <div class="data-label">Address</div>
+                            <div class="data-value" id="client-address" style="font-size: 0.875rem">-</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: 1.5rem;">
+                <h3 style="margin-top: 0">Line Items</h3>
+                <div class="table-wrapper">
+                    <table id="line-items-table">
+                        <thead>
+                            <tr>
+                                <th>Description</th>
+                                <th>Qty</th>
+                                <th>Unit Price</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+                <div class="financials-summary">
+                    <div style="margin-bottom: 0.5rem">Subtotal: <span id="sum-subtotal">$0.00</span></div>
+                    <div style="margin-bottom: 1rem">Tax: <span id="sum-tax">$0.00</span></div>
+                    <div class="total-row">Total: <span id="sum-total">$0.00</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Raw Text View -->
+        <div id="tab-raw" class="tab-content">
+            <div class="ocr-analysis-vertical">
+                <div style="margin-bottom: 2rem;">
+                    <h4 style="color: var(--text-muted); border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">Original OCR Output</h4>
+                    <pre id="raw-text" style="color: #94a3b8; font-size: 0.75rem; max-height: 400px;"></pre>
+                </div>
+                <div>
+                    <h4 style="color: var(--primary); border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">Cleaned & Markdown Optimized</h4>
+                    <pre id="cleaned-text" style="font-size: 0.85rem; max-height: 600px; border: 1px solid rgba(99, 102, 241, 0.2);"></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- JSON View -->
+        <div id="tab-json" class="tab-content">
+            <pre id="json-output"></pre>
+        </div>
+    </div>
+</div>
+
+<script>
+    const uploadArea = document.getElementById('upload-area');
+    const fileInput = document.getElementById('file-input');
+    const fileName = document.getElementById('file-name');
+    const processBtn = document.getElementById('process-btn');
+    const timerDisplay = document.getElementById('timer');
+    const timingsBar = document.getElementById('timings-bar');
+    const resultsArea = document.getElementById('results-area');
+    const imagePreview = document.getElementById('image-preview');
+    const previewPlaceholder = document.getElementById('preview-placeholder');
+
+    let selectedFile = null;
+    let timerInterval = null;
+    let startTime = null;
+
+    // Fix Drag and Drop
+    uploadArea.onclick = () => fileInput.click();
+    
+    uploadArea.ondragover = (e) => { 
+        e.preventDefault(); 
+        uploadArea.classList.add('active'); 
+    };
+    
+    uploadArea.ondragleave = () => { 
+        uploadArea.classList.remove('active'); 
+    };
+    
+    uploadArea.ondrop = (e) => {
+        e.preventDefault();
+        uploadArea.classList.remove('active');
+        if (e.dataTransfer.files.length > 0) {
+            handleFile(e.dataTransfer.files[0]);
+        }
+    };
+
+    fileInput.onchange = (e) => handleFile(e.target.files[0]);
+
+    function handleFile(file) {
+        if (file && file.type.startsWith('image/')) {
+            selectedFile = file;
+            fileName.textContent = `File: ${file.name}`;
+            processBtn.disabled = false;
+            
+            // Image Preview
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+                previewPlaceholder.style.display = 'none';
+            };
+            reader.readAsDataURL(file);
+            
+            // Hide previous results
+            resultsArea.classList.add('hidden');
+            timingsBar.classList.add('hidden');
+            timerDisplay.textContent = "00:00.0";
+        } else {
+            alert("Please select an image file.");
+        }
+    }
+
+    function updateTimer() {
+        const now = Date.now();
+        const diff = now - startTime;
+        const seconds = (diff / 1000).toFixed(1);
+        timerDisplay.textContent = `${seconds}s`;
+    }
+
+    function switchTab(tabName) {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        
+        event.target.classList.add('active');
+        document.getElementById(`tab-${tabName}`).classList.add('active');
+    }
+
+    processBtn.onclick = async () => {
+        if (!selectedFile) return;
+
+        // Reset & Start UI
+        processBtn.disabled = true;
+        resultsArea.classList.add('hidden');
+        timingsBar.classList.add('hidden');
+        
+        startTime = Date.now();
+        timerInterval = setInterval(updateTimer, 100);
+
+        const formData = new FormData();
+        formData.append('file', selectedFile);
+
+        try {
+            const response = await fetch('/process', { method: 'POST', body: formData });
+            if (!response.ok) throw new Error("Processing failed. Ensure servers are running.");
+            
+            const data = await response.json();
+            renderResults(data);
+        } catch (err) {
+            alert(err.message);
+        } finally {
+            clearInterval(timerInterval);
+            processBtn.disabled = false;
+        }
+    };
+
+    function renderResults(data) {
+        if (data.error) {
+            alert("Error: " + data.error);
+            return;
+        }
+        const sd = data.structured_data || {};
+        
+        // 1. Timings
+        document.getElementById('vlm-time').textContent = `${data.timings.vlm_sec}s`;
+        document.getElementById('llm-time').textContent = `${data.timings.llm_sec}s`;
+        document.getElementById('total-time').textContent = `${data.timings.total_sec}s`;
+        timingsBar.classList.remove('hidden');
+
+        // 2. Validation
+        const banner = document.getElementById('validation-error');
+        const errorList = document.getElementById('error-list');
+        errorList.innerHTML = '';
+        if (sd.requires_human_review) {
+            banner.style.display = 'block';
+            (sd.validation_errors || ["Unknown error"]).forEach(err => {
+                const li = document.createElement('li');
+                li.textContent = err;
+                errorList.appendChild(li);
+            });
+        } else {
+            banner.style.display = 'none';
+        }
+
+        // 3. Document Details
+        const dd = sd.document_details || {};
+        document.getElementById('doc-type').textContent = dd.document_type || 'N/A';
+        document.getElementById('doc-number').textContent = dd.invoice_number || 'N/A';
+        document.getElementById('doc-date').textContent = dd.invoice_date || 'N/A';
+        document.getElementById('doc-due').textContent = dd.due_date || 'N/A';
+
+        // 4. Parties
+        const vd = sd.vendor_details || {};
+        const cd = sd.client_details || {};
+        document.getElementById('vendor-name').textContent = vd.company_name || 'N/A';
+        document.getElementById('vendor-address').textContent = vd.address || 'N/A';
+        document.getElementById('client-name').textContent = cd.company_name || 'N/A';
+        document.getElementById('client-address').textContent = cd.address || 'N/A';
+
+        // 5. Line Items
+        const tbody = document.querySelector('#line-items-table tbody');
+        tbody.innerHTML = '';
+        (sd.line_items || []).forEach(item => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td>${item.description || 'N/A'}</td>
+                <td>${item.quantity || 0}</td>
+                <td>$${(item.unit_price || 0).toFixed(2)}</td>
+                <td>$${(item.line_total || 0).toFixed(2)}</td>
+            `;
+            tbody.appendChild(tr);
+        });
+
+        // 6. Financials
+        const fin = sd.financials || {};
+        document.getElementById('sum-subtotal').textContent = `$${(fin.subtotal || 0).toFixed(2)}`;
+        document.getElementById('sum-tax').textContent = `$${(fin.tax_amount || 0).toFixed(2)}`;
+        document.getElementById('sum-total').textContent = `$${(fin.total_amount || 0).toFixed(2)}`;
+
+        // 7. Raw Text
+        document.getElementById('raw-text').textContent = data.raw_text;
+        document.getElementById('cleaned-text').textContent = data.cleaned_text;
+        document.getElementById('json-output').textContent = JSON.stringify(sd, null, 2);
+
+        resultsArea.classList.remove('hidden');
+    }
+</script>
+
+</body>
+</html>
