@@ -1,0 +1,860 @@
+2026-05-13 08:36:38,073 - INFO - Processing Image: uploads/727c8ff2-77d2-40c0-b152-d7717fb51b2e.jpg
+2026-05-13 08:36:38,074 - INFO - Processing page 1/1
+2026-05-13 08:36:41,559 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:36:41,583 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:36:41,591 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:36:41,593 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:36:41,595 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:36:41,598 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:36:41,625 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:36:41,646 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:36:41,728 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:36:41,745 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:36:41,768 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:36:41,779 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:36:41,804 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:36:42,185 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:36:49,782 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:36:49,783 - INFO - Page 1 processed successfully
+2026-05-13 08:39:21,620 - INFO - Processing Image: uploads/f5451c99-6cd9-4a35-bae7-d22dd820f85b.jpg
+2026-05-13 08:39:21,620 - INFO - Processing page 1/1
+2026-05-13 08:39:24,464 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:39:24,480 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:39:24,481 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:39:24,484 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:39:24,488 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:39:24,489 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:39:24,523 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:39:24,539 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:39:24,623 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:39:24,631 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:39:24,651 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:39:24,654 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:39:24,683 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:39:25,069 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:39:28,728 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:39:28,729 - INFO - Page 1 processed successfully
+2026-05-13 08:44:48,131 - INFO - Processing Image: uploads/3afecfb3-d52c-47b7-a455-acecccb72aed.jpg
+2026-05-13 08:44:48,131 - INFO - Processing page 1/1
+2026-05-13 08:44:49,424 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:44:49,425 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:44:49,434 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:44:49,441 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:44:49,447 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:44:49,448 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:44:49,479 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:44:49,492 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:44:49,596 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:44:49,617 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:44:49,632 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:44:49,639 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:44:49,662 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:44:50,080 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:44:55,189 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:44:55,191 - INFO - Page 1 processed successfully
+2026-05-13 08:47:01,578 - INFO - Processing PDF: uploads/db6988be-339e-46ed-afd0-0aab6aa78d37.pdf
+2026-05-13 08:47:02,307 - INFO - Processing page 1/4
+2026-05-13 08:47:04,096 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:04,097 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:04,102 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:04,103 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:04,109 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:04,124 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:04,260 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:04,266 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:04,303 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:04,354 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:04,395 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:05,322 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:09,936 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:15,617 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:15,618 - INFO - Page 1 processed successfully
+2026-05-13 08:47:15,618 - INFO - Processing page 2/4
+2026-05-13 08:47:17,211 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:17,216 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:17,226 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:17,363 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:17,367 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:17,448 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:17,490 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:18,355 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:22,727 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:30,864 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:30,865 - INFO - Page 2 processed successfully
+2026-05-13 08:47:30,865 - INFO - Processing page 3/4
+2026-05-13 08:47:32,447 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:32,457 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:32,473 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:32,636 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:32,644 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:32,713 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:32,755 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:33,621 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:47:38,445 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:48:11,528 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:48:11,531 - INFO - Page 3 processed successfully
+2026-05-13 08:48:11,531 - INFO - Processing page 4/4
+2026-05-13 08:48:13,155 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:48:13,161 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:48:13,165 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:48:13,312 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:48:13,320 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:48:13,392 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:48:13,465 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:48:14,304 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:48:18,119 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:49:19,900 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:49:19,902 - INFO - Page 4 processed successfully
+2026-05-13 08:55:15,066 - INFO - Processing PDF: uploads/cdca4a79-4c0f-4564-a9e0-8f59b35f1e55.pdf
+2026-05-13 08:55:15,654 - INFO - Processing page 1/4
+2026-05-13 08:55:18,965 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:55:18,978 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:55:18,979 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:55:18,983 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:55:18,986 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:55:18,990 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:55:19,131 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:55:19,140 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:55:19,174 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:55:19,218 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:55:19,260 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:55:20,352 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:55:24,917 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:55:32,868 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:55:32,871 - INFO - Page 1 processed successfully
+2026-05-13 08:55:32,871 - INFO - Processing page 2/4
+2026-05-13 08:55:34,234 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:55:34,512 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:55:34,523 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:55:34,667 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:55:34,674 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:55:34,717 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:55:34,799 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:55:35,729 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:55:39,767 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:55:59,366 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:55:59,367 - INFO - Page 2 processed successfully
+2026-05-13 08:55:59,367 - INFO - Processing page 3/4
+2026-05-13 08:56:00,972 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:56:00,980 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:56:00,990 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:56:01,128 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:56:01,137 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:56:01,210 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:56:01,253 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:56:02,192 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:56:06,867 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:56:11,712 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:56:11,713 - INFO - Page 3 processed successfully
+2026-05-13 08:56:11,713 - INFO - Processing page 4/4
+2026-05-13 08:56:13,330 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:56:13,339 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:56:13,344 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:56:13,486 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:56:13,495 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:56:13,567 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:56:13,643 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:56:14,488 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:56:18,427 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:58:02,690 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:58:02,693 - INFO - Page 4 processed successfully
+2026-05-13 08:58:42,142 - INFO - Processing Image: uploads/ed16ef6f-f35e-4d11-855d-63cca3dd4b8b.jpg
+2026-05-13 08:58:42,143 - INFO - Processing page 1/1
+2026-05-13 08:58:43,386 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:58:43,394 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:58:43,395 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:58:43,403 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:58:43,404 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:58:43,407 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:58:43,440 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:58:43,453 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:58:43,531 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:58:43,543 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:58:43,560 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:58:43,563 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:58:43,584 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:58:43,956 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:59:39,870 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-13 08:59:39,873 - INFO - Page 1 processed successfully
+2026-05-14 05:06:34,900 - INFO - Processing PDF: invoices/108563_mrRaj_invoice.pdf
+2026-05-14 05:06:35,554 - INFO - Processing page 1/4
+2026-05-14 05:06:47,686 - ERROR - Error processing page 1: Exception from the 'cv' worker: 
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::AnalysisPredictor::ZeroCopyRun(bool)
+1   paddle::framework::NaiveExecutor::RunInterpreterCore(std::vector<std::string, std::allocator<std::string > > const&, bool, bool)
+2   paddle::framework::InterpreterCore::Run(std::vector<std::string, std::allocator<std::string > > const&, bool, bool, bool, bool)
+3   paddle::framework::PirInterpreter::Run(std::vector<std::string, std::allocator<std::string > > const&, bool, bool, bool, bool)
+4   paddle::framework::PirInterpreter::TraceRunImpl()
+5   paddle::framework::PirInterpreter::TraceRunInstructionList(std::vector<std::unique_ptr<paddle::framework::InstructionBase, std::default_delete<paddle::framework::InstructionBase> >, std::allocator<std::unique_ptr<paddle::framework::InstructionBase, std::default_delete<paddle::framework::InstructionBase> > > > const&)
+6   paddle::framework::PirInterpreter::RunInstructionBase(paddle::framework::InstructionBase*)
+7   paddle::framework::PhiKernelInstruction::Run()
+8   phi::KernelImpl<void (*)(phi::GPUContext const&, std::vector<phi::DenseTensor const*, std::allocator<phi::DenseTensor const*> > const&, paddle::experimental::ScalarBase<phi::DenseTensor> const&, phi::DenseTensor*), &(void phi::ConcatKernel<float, phi::GPUContext>(phi::GPUContext const&, std::vector<phi::DenseTensor const*, std::allocator<phi::DenseTensor const*> > const&, paddle::experimental::ScalarBase<phi::DenseTensor> const&, phi::DenseTensor*))>::Compute(phi::KernelContext*)
+9   void phi::ConcatKernel<float, phi::GPUContext>(phi::GPUContext const&, std::vector<phi::DenseTensor const*, std::allocator<phi::DenseTensor const*> > const&, paddle::experimental::ScalarBase<phi::DenseTensor> const&, phi::DenseTensor*)
+10  float* phi::DeviceContext::Alloc<float>(phi::TensorBase*, unsigned long, bool) const
+11  phi::DenseTensor::AllocateFrom(phi::Allocator*, phi::DataType, unsigned long, bool)
+12  paddle::memory::allocation::Allocator::Allocate(unsigned long)
+13  paddle::memory::allocation::StatAllocator::AllocateImpl(unsigned long)
+14  paddle::memory::allocation::Allocator::Allocate(unsigned long)
+15  paddle::memory::allocation::Allocator::Allocate(unsigned long)
+16  paddle::memory::allocation::Allocator::Allocate(unsigned long)
+17  paddle::memory::allocation::Allocator::Allocate(unsigned long)
+18  std::string phi::enforce::GetCompleteTraceBackString<std::string >(std::string&&, char const*, int)
+19  common::enforce::GetCurrentTraceBackString[abi:cxx11](bool)
+
+----------------------
+Error Message Summary:
+----------------------
+ResourceExhaustedError: 
+
+Out of memory error on GPU 0. Cannot allocate 51.269531MB memory on GPU 0, 14.528259GB memory has been allocated and available memory is only 34.750000MB.
+
+Please check whether there is any other process using GPU 0.
+1. If yes, please stop them, or start PaddlePaddle on another GPU.
+2. If no, please decrease the batch size of your model. 
+ (at /paddle/paddle/phi/core/memory/allocation/cuda_allocator.cc:71)
+
+2026-05-14 05:06:47,687 - INFO - Processing page 2/4
+2026-05-14 05:06:58,654 - ERROR - Error processing page 2: Exception from the 'cv' worker: 
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::AnalysisPredictor::ZeroCopyRun(bool)
+1   paddle::framework::NaiveExecutor::RunInterpreterCore(std::vector<std::string, std::allocator<std::string > > const&, bool, bool)
+2   paddle::framework::InterpreterCore::Run(std::vector<std::string, std::allocator<std::string > > const&, bool, bool, bool, bool)
+3   paddle::framework::PirInterpreter::Run(std::vector<std::string, std::allocator<std::string > > const&, bool, bool, bool, bool)
+4   paddle::framework::PirInterpreter::TraceRunImpl()
+5   paddle::framework::PirInterpreter::TraceRunInstructionList(std::vector<std::unique_ptr<paddle::framework::InstructionBase, std::default_delete<paddle::framework::InstructionBase> >, std::allocator<std::unique_ptr<paddle::framework::InstructionBase, std::default_delete<paddle::framework::InstructionBase> > > > const&)
+6   paddle::framework::PirInterpreter::RunInstructionBase(paddle::framework::InstructionBase*)
+7   paddle::framework::PhiKernelInstruction::Run()
+8   void phi::KernelImpl<void (*)(phi::GPUContext const&, phi::DenseTensor const&, phi::DenseTensor const&, phi::DenseTensor const&, paddle::optional<phi::DenseTensor> const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::string const&, std::vector<int, std::allocator<int> > const&, int, std::string const&, std::string const&, std::vector<int, std::allocator<int> > const&, bool, int, float, phi::DenseTensor*, std::vector<phi::DenseTensor*, std::allocator<phi::DenseTensor*> >), &(void phi::fusion::FusedConv2dAddActKernel<float, phi::GPUContext>(phi::GPUContext const&, phi::DenseTensor const&, phi::DenseTensor const&, phi::DenseTensor const&, paddle::optional<phi::DenseTensor> const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::string const&, std::vector<int, std::allocator<int> > const&, int, std::string const&, std::string const&, std::vector<int, std::allocator<int> > const&, bool, int, float, phi::DenseTensor*, std::vector<phi::DenseTensor*, std::allocator<phi::DenseTensor*> >))>::KernelCallHelper<paddle::optional<phi::DenseTensor> const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::string const&, std::vector<int, std::allocator<int> > const&, int, std::string const&, std::string const&, std::vector<int, std::allocator<int> > const&, bool, int, float, phi::DenseTensor*, std::vector<phi::DenseTensor*, std::allocator<phi::DenseTensor*> >, phi::TypeTag<int> >::Compute<1, 3, 0, 0, phi::GPUContext const, phi::DenseTensor const, phi::DenseTensor const, phi::DenseTensor const>(phi::KernelContext*, phi::GPUContext const&, phi::DenseTensor const&, phi::DenseTensor const&, phi::DenseTensor const&)
+9   void phi::fusion::FusedConv2dAddActKernel<float, phi::GPUContext>(phi::GPUContext const&, phi::DenseTensor const&, phi::DenseTensor const&, phi::DenseTensor const&, paddle::optional<phi::DenseTensor> const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::string const&, std::vector<int, std::allocator<int> > const&, int, std::string const&, std::string const&, std::vector<int, std::allocator<int> > const&, bool, int, float, phi::DenseTensor*, std::vector<phi::DenseTensor*, std::allocator<phi::DenseTensor*> >)
+10  float* phi::DeviceContext::Alloc<float>(phi::TensorBase*, unsigned long, bool) const
+11  phi::DenseTensor::AllocateFrom(phi::Allocator*, phi::DataType, unsigned long, bool)
+12  paddle::memory::allocation::Allocator::Allocate(unsigned long)
+13  paddle::memory::allocation::StatAllocator::AllocateImpl(unsigned long)
+14  paddle::memory::allocation::Allocator::Allocate(unsigned long)
+15  paddle::memory::allocation::Allocator::Allocate(unsigned long)
+16  paddle::memory::allocation::Allocator::Allocate(unsigned long)
+17  paddle::memory::allocation::Allocator::Allocate(unsigned long)
+18  std::string phi::enforce::GetCompleteTraceBackString<std::string >(std::string&&, char const*, int)
+19  common::enforce::GetCurrentTraceBackString[abi:cxx11](bool)
+
+----------------------
+Error Message Summary:
+----------------------
+ResourceExhaustedError: 
+
+Out of memory error on GPU 0. Cannot allocate 19.629150MB memory on GPU 0, 14.547791GB memory has been allocated and available memory is only 14.750000MB.
+
+Please check whether there is any other process using GPU 0.
+1. If yes, please stop them, or start PaddlePaddle on another GPU.
+2. If no, please decrease the batch size of your model. 
+ (at /paddle/paddle/phi/core/memory/allocation/cuda_allocator.cc:71)
+
+2026-05-14 05:06:58,654 - INFO - Processing page 3/4
+2026-05-14 05:07:09,649 - ERROR - Error processing page 3: Exception from the 'cv' worker: 
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::AnalysisPredictor::ZeroCopyRun(bool)
+1   paddle::framework::NaiveExecutor::RunInterpreterCore(std::vector<std::string, std::allocator<std::string > > const&, bool, bool)
+2   paddle::framework::InterpreterCore::Run(std::vector<std::string, std::allocator<std::string > > const&, bool, bool, bool, bool)
+3   paddle::framework::PirInterpreter::Run(std::vector<std::string, std::allocator<std::string > > const&, bool, bool, bool, bool)
+4   paddle::framework::PirInterpreter::TraceRunImpl()
+5   paddle::framework::PirInterpreter::TraceRunInstructionList(std::vector<std::unique_ptr<paddle::framework::InstructionBase, std::default_delete<paddle::framework::InstructionBase> >, std::allocator<std::unique_ptr<paddle::framework::InstructionBase, std::default_delete<paddle::framework::InstructionBase> > > > const&)
+6   paddle::framework::PirInterpreter::RunInstructionBase(paddle::framework::InstructionBase*)
+7   paddle::framework::PhiKernelInstruction::Run()
+8   void phi::KernelImpl<void (*)(phi::GPUContext const&, phi::DenseTensor const&, phi::DenseTensor const&, phi::DenseTensor const&, paddle::optional<phi::DenseTensor> const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::string const&, std::vector<int, std::allocator<int> > const&, int, std::string const&, std::string const&, std::vector<int, std::allocator<int> > const&, bool, int, float, phi::DenseTensor*, std::vector<phi::DenseTensor*, std::allocator<phi::DenseTensor*> >), &(void phi::fusion::FusedConv2dAddActKernel<float, phi::GPUContext>(phi::GPUContext const&, phi::DenseTensor const&, phi::DenseTensor const&, phi::DenseTensor const&, paddle::optional<phi::DenseTensor> const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::string const&, std::vector<int, std::allocator<int> > const&, int, std::string const&, std::string const&, std::vector<int, std::allocator<int> > const&, bool, int, float, phi::DenseTensor*, std::vector<phi::DenseTensor*, std::allocator<phi::DenseTensor*> >))>::KernelCallHelper<paddle::optional<phi::DenseTensor> const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::string const&, std::vector<int, std::allocator<int> > const&, int, std::string const&, std::string const&, std::vector<int, std::allocator<int> > const&, bool, int, float, phi::DenseTensor*, std::vector<phi::DenseTensor*, std::allocator<phi::DenseTensor*> >, phi::TypeTag<int> >::Compute<1, 3, 0, 0, phi::GPUContext const, phi::DenseTensor const, phi::DenseTensor const, phi::DenseTensor const>(phi::KernelContext*, phi::GPUContext const&, phi::DenseTensor const&, phi::DenseTensor const&, phi::DenseTensor const&)
+9   void phi::fusion::FusedConv2dAddActKernel<float, phi::GPUContext>(phi::GPUContext const&, phi::DenseTensor const&, phi::DenseTensor const&, phi::DenseTensor const&, paddle::optional<phi::DenseTensor> const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::string const&, std::vector<int, std::allocator<int> > const&, int, std::string const&, std::string const&, std::vector<int, std::allocator<int> > const&, bool, int, float, phi::DenseTensor*, std::vector<phi::DenseTensor*, std::allocator<phi::DenseTensor*> >)
+10  float* phi::DeviceContext::Alloc<float>(phi::TensorBase*, unsigned long, bool) const
+11  phi::DenseTensor::AllocateFrom(phi::Allocator*, phi::DataType, unsigned long, bool)
+12  paddle::memory::allocation::Allocator::Allocate(unsigned long)
+13  paddle::memory::allocation::StatAllocator::AllocateImpl(unsigned long)
+14  paddle::memory::allocation::Allocator::Allocate(unsigned long)
+15  paddle::memory::allocation::Allocator::Allocate(unsigned long)
+16  paddle::memory::allocation::Allocator::Allocate(unsigned long)
+17  paddle::memory::allocation::Allocator::Allocate(unsigned long)
+18  std::string phi::enforce::GetCompleteTraceBackString<std::string >(std::string&&, char const*, int)
+19  common::enforce::GetCurrentTraceBackString[abi:cxx11](bool)
+
+----------------------
+Error Message Summary:
+----------------------
+ResourceExhaustedError: 
+
+Out of memory error on GPU 0. Cannot allocate 19.629150MB memory on GPU 0, 14.547791GB memory has been allocated and available memory is only 14.750000MB.
+
+Please check whether there is any other process using GPU 0.
+1. If yes, please stop them, or start PaddlePaddle on another GPU.
+2. If no, please decrease the batch size of your model. 
+ (at /paddle/paddle/phi/core/memory/allocation/cuda_allocator.cc:71)
+
+2026-05-14 05:07:09,650 - INFO - Processing page 4/4
+2026-05-14 05:07:20,622 - ERROR - Error processing page 4: Exception from the 'cv' worker: 
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::AnalysisPredictor::ZeroCopyRun(bool)
+1   paddle::framework::NaiveExecutor::RunInterpreterCore(std::vector<std::string, std::allocator<std::string > > const&, bool, bool)
+2   paddle::framework::InterpreterCore::Run(std::vector<std::string, std::allocator<std::string > > const&, bool, bool, bool, bool)
+3   paddle::framework::PirInterpreter::Run(std::vector<std::string, std::allocator<std::string > > const&, bool, bool, bool, bool)
+4   paddle::framework::PirInterpreter::TraceRunImpl()
+5   paddle::framework::PirInterpreter::TraceRunInstructionList(std::vector<std::unique_ptr<paddle::framework::InstructionBase, std::default_delete<paddle::framework::InstructionBase> >, std::allocator<std::unique_ptr<paddle::framework::InstructionBase, std::default_delete<paddle::framework::InstructionBase> > > > const&)
+6   paddle::framework::PirInterpreter::RunInstructionBase(paddle::framework::InstructionBase*)
+7   paddle::framework::PhiKernelInstruction::Run()
+8   void phi::KernelImpl<void (*)(phi::GPUContext const&, phi::DenseTensor const&, phi::DenseTensor const&, phi::DenseTensor const&, paddle::optional<phi::DenseTensor> const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::string const&, std::vector<int, std::allocator<int> > const&, int, std::string const&, std::string const&, std::vector<int, std::allocator<int> > const&, bool, int, float, phi::DenseTensor*, std::vector<phi::DenseTensor*, std::allocator<phi::DenseTensor*> >), &(void phi::fusion::FusedConv2dAddActKernel<float, phi::GPUContext>(phi::GPUContext const&, phi::DenseTensor const&, phi::DenseTensor const&, phi::DenseTensor const&, paddle::optional<phi::DenseTensor> const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::string const&, std::vector<int, std::allocator<int> > const&, int, std::string const&, std::string const&, std::vector<int, std::allocator<int> > const&, bool, int, float, phi::DenseTensor*, std::vector<phi::DenseTensor*, std::allocator<phi::DenseTensor*> >))>::KernelCallHelper<paddle::optional<phi::DenseTensor> const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::string const&, std::vector<int, std::allocator<int> > const&, int, std::string const&, std::string const&, std::vector<int, std::allocator<int> > const&, bool, int, float, phi::DenseTensor*, std::vector<phi::DenseTensor*, std::allocator<phi::DenseTensor*> >, phi::TypeTag<int> >::Compute<1, 3, 0, 0, phi::GPUContext const, phi::DenseTensor const, phi::DenseTensor const, phi::DenseTensor const>(phi::KernelContext*, phi::GPUContext const&, phi::DenseTensor const&, phi::DenseTensor const&, phi::DenseTensor const&)
+9   void phi::fusion::FusedConv2dAddActKernel<float, phi::GPUContext>(phi::GPUContext const&, phi::DenseTensor const&, phi::DenseTensor const&, phi::DenseTensor const&, paddle::optional<phi::DenseTensor> const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::string const&, std::vector<int, std::allocator<int> > const&, int, std::string const&, std::string const&, std::vector<int, std::allocator<int> > const&, bool, int, float, phi::DenseTensor*, std::vector<phi::DenseTensor*, std::allocator<phi::DenseTensor*> >)
+10  float* phi::DeviceContext::Alloc<float>(phi::TensorBase*, unsigned long, bool) const
+11  phi::DenseTensor::AllocateFrom(phi::Allocator*, phi::DataType, unsigned long, bool)
+12  paddle::memory::allocation::Allocator::Allocate(unsigned long)
+13  paddle::memory::allocation::StatAllocator::AllocateImpl(unsigned long)
+14  paddle::memory::allocation::Allocator::Allocate(unsigned long)
+15  paddle::memory::allocation::Allocator::Allocate(unsigned long)
+16  paddle::memory::allocation::Allocator::Allocate(unsigned long)
+17  paddle::memory::allocation::Allocator::Allocate(unsigned long)
+18  std::string phi::enforce::GetCompleteTraceBackString<std::string >(std::string&&, char const*, int)
+19  common::enforce::GetCurrentTraceBackString[abi:cxx11](bool)
+
+----------------------
+Error Message Summary:
+----------------------
+ResourceExhaustedError: 
+
+Out of memory error on GPU 0. Cannot allocate 19.629150MB memory on GPU 0, 14.547791GB memory has been allocated and available memory is only 14.750000MB.
+
+Please check whether there is any other process using GPU 0.
+1. If yes, please stop them, or start PaddlePaddle on another GPU.
+2. If no, please decrease the batch size of your model. 
+ (at /paddle/paddle/phi/core/memory/allocation/cuda_allocator.cc:71)
+
+2026-05-14 05:13:09,910 - INFO - Processing PDF: invoices/108563_mrRaj_invoice.pdf
+2026-05-14 05:13:10,368 - INFO - Processing page 1/4
+2026-05-14 05:13:20,016 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:13:20,050 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:13:20,051 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:13:20,055 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:13:20,060 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:13:20,080 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:13:20,209 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:13:20,213 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:13:20,255 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:13:20,293 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:13:20,335 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:13:21,212 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:13:25,733 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:13:37,973 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:13:37,975 - INFO - Page 1 processed successfully
+2026-05-14 05:13:37,975 - INFO - Processing page 2/4
+2026-05-14 05:13:39,576 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:13:39,586 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:13:39,587 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:13:39,726 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:13:39,734 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:13:39,806 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:13:39,852 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:13:40,708 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:13:44,649 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:10,488 - INFO - Processing Image: uploads/2234c4bc-c1d5-4c0d-b1f6-d40fdaf874c7.jpg
+2026-05-14 05:14:10,489 - INFO - Processing page 1/1
+2026-05-14 05:14:15,233 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:15,249 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:15,281 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:15,294 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:15,295 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:15,296 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:15,412 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:15,472 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:15,740 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:15,760 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:15,820 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:15,822 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:15,889 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:17,039 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:24,719 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:24,721 - INFO - Page 1 processed successfully
+2026-05-14 05:14:31,511 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:31,514 - INFO - Page 2 processed successfully
+2026-05-14 05:14:31,514 - INFO - Processing page 3/4
+2026-05-14 05:14:33,103 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:33,113 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:33,122 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:33,262 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:33,266 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:33,339 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:33,385 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:34,245 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:38,816 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:43,740 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:43,741 - INFO - Page 3 processed successfully
+2026-05-14 05:14:43,741 - INFO - Processing page 4/4
+2026-05-14 05:14:45,319 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:45,328 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:45,333 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:45,478 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:45,489 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:45,556 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:45,634 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:46,507 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:14:50,148 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:15:41,246 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 05:15:41,247 - INFO - Page 4 processed successfully
+2026-05-14 07:13:27,091 - INFO - Processing PDF: invoices/108563_mrRaj_invoice.pdf
+2026-05-14 07:13:27,640 - INFO - Processing page 1/4
+2026-05-14 07:13:37,415 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:13:37,426 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:13:37,449 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:13:37,454 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:13:37,455 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:13:37,462 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:13:37,597 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:13:37,601 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:13:37,643 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:13:37,685 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:13:37,722 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:13:38,601 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:13:43,060 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:13:51,034 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:13:51,035 - INFO - Page 1 processed successfully
+2026-05-14 07:13:51,035 - INFO - Processing page 2/4
+2026-05-14 07:13:51,751 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:13:52,535 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:13:52,539 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:13:52,679 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:13:52,688 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:13:52,763 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:13:52,809 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:13:53,651 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:13:57,530 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:14:35,767 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:14:35,768 - INFO - Page 2 processed successfully
+2026-05-14 07:14:35,768 - INFO - Processing page 3/4
+2026-05-14 07:14:37,266 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:14:37,271 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:14:37,287 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:14:37,421 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:14:37,430 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:14:37,501 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:14:37,543 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:14:38,401 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:14:42,907 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:14:47,453 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:14:47,454 - INFO - Page 3 processed successfully
+2026-05-14 07:14:47,454 - INFO - Processing page 4/4
+2026-05-14 07:14:48,933 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:14:48,943 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:14:48,952 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:14:49,089 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:14:49,097 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:14:49,173 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:14:49,249 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:14:50,090 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:14:53,622 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:15:10,537 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 07:15:10,538 - INFO - Page 4 processed successfully
+2026-05-14 08:11:49,105 - INFO - Processing PDF: invoices/108563_mrRaj_invoice.pdf
+2026-05-14 08:11:50,822 - INFO - Processing page 1/4
+2026-05-14 08:12:00,213 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:12:00,266 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:12:00,267 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:12:00,267 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:12:00,269 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:12:00,271 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:12:00,375 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:12:00,379 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:12:00,417 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:12:00,459 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:12:00,496 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:12:01,354 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:12:05,831 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:12:15,753 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:12:15,757 - INFO - Page 1 processed successfully
+2026-05-14 08:12:15,757 - INFO - Processing page 2/4
+2026-05-14 08:12:17,237 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:12:17,246 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:12:17,261 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:12:17,392 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:12:17,396 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:12:17,476 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:12:17,517 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:12:18,365 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:12:22,403 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:13:10,192 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:13:10,194 - INFO - Page 2 processed successfully
+2026-05-14 08:13:10,195 - INFO - Processing page 3/4
+2026-05-14 08:13:11,649 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:13:11,695 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:13:11,705 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:13:11,850 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:13:11,859 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:13:11,934 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:13:11,975 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:13:12,834 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:13:17,407 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:13:22,193 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:13:22,194 - INFO - Page 3 processed successfully
+2026-05-14 08:13:22,194 - INFO - Processing page 4/4
+2026-05-14 08:13:23,700 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:13:23,704 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:13:23,718 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:13:23,854 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:13:23,863 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:13:23,935 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:13:24,010 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:13:24,840 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:13:28,360 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:13:36,133 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:13:36,134 - INFO - Page 4 processed successfully
+2026-05-14 08:23:08,636 - INFO - Processing PDF: invoices/108563_mrRaj_invoice.pdf
+2026-05-14 08:23:09,076 - INFO - Processing page 1/4
+2026-05-14 08:23:09,858 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:09,863 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:09,865 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:09,865 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:09,870 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:09,879 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:10,008 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:10,017 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:10,072 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:10,130 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:10,182 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:11,155 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:15,610 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:23,714 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:23,715 - INFO - Page 1 processed successfully
+2026-05-14 08:23:23,715 - INFO - Processing page 2/4
+2026-05-14 08:23:24,430 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:24,434 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:24,446 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:24,594 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:24,595 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:24,655 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:24,719 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:25,557 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:29,464 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:36,321 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:36,322 - INFO - Page 2 processed successfully
+2026-05-14 08:23:36,322 - INFO - Processing page 3/4
+2026-05-14 08:23:36,989 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:36,998 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:37,008 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:37,145 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:37,154 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:37,221 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:37,263 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:38,119 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:42,604 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:51,637 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:51,638 - INFO - Page 3 processed successfully
+2026-05-14 08:23:51,638 - INFO - Processing page 4/4
+2026-05-14 08:23:52,243 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:52,247 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:52,256 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:52,402 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:52,406 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:52,460 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:52,552 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:53,364 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:23:56,964 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:24:47,378 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:24:47,380 - INFO - Page 4 processed successfully
+2026-05-14 08:30:46,072 - INFO - Processing Image: invoices/demo.png
+2026-05-14 08:30:46,073 - INFO - Processing page 1/1
+2026-05-14 08:30:47,395 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:30:47,434 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:30:47,436 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:30:47,441 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:30:47,442 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:30:47,443 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:30:47,445 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:30:47,446 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:30:47,449 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:30:47,463 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:30:47,467 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:30:47,476 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:30:47,478 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:30:47,485 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:30:47,804 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:30:47,957 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:34:57,284 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:34:57,287 - INFO - Page 1 processed successfully
+2026-05-14 08:47:49,904 - INFO - Processing Image: invoices/demo.png
+2026-05-14 08:47:49,905 - INFO - Processing page 1/1
+2026-05-14 08:47:52,598 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:47:52,611 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:47:52,612 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:47:52,612 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:47:52,613 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:47:52,614 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:47:52,614 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:47:52,615 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:47:52,620 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:47:52,627 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:47:52,631 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:47:52,640 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:47:52,641 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:47:52,648 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:47:52,968 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:47:53,118 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:48:01,660 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:48:01,661 - INFO - Page 1 processed successfully
+2026-05-14 08:48:43,437 - INFO - Processing Image: invoices/demo.png
+2026-05-14 08:48:43,437 - INFO - Processing page 1/1
+2026-05-14 08:48:44,055 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:48:44,064 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:48:44,066 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:48:44,066 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:48:44,070 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:48:44,071 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:48:44,072 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:48:44,072 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:48:44,077 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:48:44,088 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:48:44,093 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:48:44,101 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:48:44,102 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:48:44,110 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:48:44,439 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:48:44,605 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:48:51,573 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:48:51,575 - INFO - Page 1 processed successfully
+2026-05-14 08:56:07,315 - INFO - Processing Image: invoices/demo3.jpeg
+2026-05-14 08:56:07,316 - INFO - Processing page 1/1
+2026-05-14 08:56:08,546 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:56:08,551 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:56:08,556 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:56:08,562 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:56:08,563 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:56:08,566 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:56:08,571 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:56:08,580 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:56:08,590 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:56:08,602 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:56:08,607 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:56:08,615 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:56:08,657 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:56:09,434 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:56:15,539 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 08:56:15,541 - INFO - Page 1 processed successfully
+2026-05-14 09:07:11,755 - INFO - Processing Image: invoices/demo3.jpeg
+2026-05-14 09:07:11,756 - INFO - Processing page 1/1
+2026-05-14 09:07:12,368 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:07:12,379 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:07:12,380 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:07:12,381 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:07:12,385 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:07:12,385 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:07:12,393 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:07:12,401 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:07:12,405 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:07:12,418 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:07:12,422 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:07:12,430 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:07:12,475 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:07:13,257 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:07:18,961 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:07:18,962 - INFO - Page 1 processed successfully
+2026-05-14 09:12:04,558 - INFO - Processing Image: invoices/demo3.jpeg
+2026-05-14 09:12:04,559 - INFO - Processing page 1/1
+2026-05-14 09:12:05,875 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:12:05,879 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:12:05,880 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:12:05,883 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:12:05,888 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:12:05,889 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:12:05,896 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:12:05,906 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:12:05,911 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:12:05,930 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:12:05,931 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:12:05,938 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:12:05,977 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:12:06,756 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:12:12,453 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:12:12,455 - INFO - Page 1 processed successfully
+2026-05-14 09:16:33,104 - INFO - Cleaned up old file/dir: temp/dev_pipeline
+2026-05-14 09:18:24,428 - INFO - Processing PDF: uploads/a9ddbdc5-d883-414f-b073-4043b65f93c4.pdf
+2026-05-14 09:18:24,962 - INFO - Processing page 1/4
+2026-05-14 09:18:27,351 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:18:27,364 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:18:27,366 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:18:27,367 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:18:27,369 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:18:27,373 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:18:27,513 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:18:27,517 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:18:27,564 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:18:27,603 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:18:27,643 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:18:28,505 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:18:33,036 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:19:01,073 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:19:01,075 - INFO - Page 1 processed successfully
+2026-05-14 09:19:01,075 - INFO - Processing page 2/4
+2026-05-14 09:19:01,769 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:19:01,774 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:19:01,779 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:19:01,917 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:19:01,921 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:19:01,992 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:19:02,043 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:19:02,885 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:19:06,826 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:19:32,031 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:19:32,033 - INFO - Page 2 processed successfully
+2026-05-14 09:19:32,033 - INFO - Processing page 3/4
+2026-05-14 09:19:32,776 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:19:32,786 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:19:32,796 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:19:32,936 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:19:32,946 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:19:33,014 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:19:33,055 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:19:33,912 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:19:38,455 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:20:05,391 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:20:05,392 - INFO - Page 3 processed successfully
+2026-05-14 09:20:05,393 - INFO - Processing page 4/4
+2026-05-14 09:20:06,067 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:20:06,071 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:20:06,075 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:20:06,223 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:20:06,231 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:20:06,299 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:20:06,374 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:20:07,200 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:20:10,773 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:20:34,966 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-14 09:20:34,968 - INFO - Page 4 processed successfully
+2026-05-15 03:42:37,552 - INFO - Processing PDF: uploads/aeae8eae-42a2-4804-a3f6-026b2beaf9e2.pdf
+2026-05-15 03:42:37,804 - INFO - Processing page 1/1
+2026-05-15 03:42:40,694 - INFO - Retrying request to /chat/completions in 0.400369 seconds
+2026-05-15 03:42:40,695 - INFO - Retrying request to /chat/completions in 0.439563 seconds
+2026-05-15 03:42:40,695 - INFO - Retrying request to /chat/completions in 0.451322 seconds
+2026-05-15 03:42:40,695 - INFO - Retrying request to /chat/completions in 0.396324 seconds
+2026-05-15 03:42:40,696 - INFO - Retrying request to /chat/completions in 0.391196 seconds
+2026-05-15 03:42:40,696 - INFO - Retrying request to /chat/completions in 0.487446 seconds
+2026-05-15 03:42:40,696 - INFO - Retrying request to /chat/completions in 0.435890 seconds
+2026-05-15 03:42:40,696 - INFO - Retrying request to /chat/completions in 0.380412 seconds
+2026-05-15 03:42:40,696 - INFO - Retrying request to /chat/completions in 0.409773 seconds
+2026-05-15 03:42:40,697 - INFO - Retrying request to /chat/completions in 0.410504 seconds
+2026-05-15 03:42:40,697 - INFO - Retrying request to /chat/completions in 0.451450 seconds
+2026-05-15 03:42:40,697 - INFO - Retrying request to /chat/completions in 0.377231 seconds
+2026-05-15 03:42:40,697 - INFO - Retrying request to /chat/completions in 0.411070 seconds
+2026-05-15 03:42:41,078 - INFO - Retrying request to /chat/completions in 0.781575 seconds
+2026-05-15 03:42:41,079 - INFO - Retrying request to /chat/completions in 0.800587 seconds
+2026-05-15 03:42:41,091 - INFO - Retrying request to /chat/completions in 0.974427 seconds
+2026-05-15 03:42:41,093 - INFO - Retrying request to /chat/completions in 0.961234 seconds
+2026-05-15 03:42:41,097 - INFO - Retrying request to /chat/completions in 0.881512 seconds
+2026-05-15 03:42:41,109 - INFO - Retrying request to /chat/completions in 0.816305 seconds
+2026-05-15 03:42:41,109 - INFO - Retrying request to /chat/completions in 0.789203 seconds
+2026-05-15 03:42:41,110 - INFO - Retrying request to /chat/completions in 0.913210 seconds
+2026-05-15 03:42:41,134 - INFO - Retrying request to /chat/completions in 0.754671 seconds
+2026-05-15 03:42:41,136 - INFO - Retrying request to /chat/completions in 0.848027 seconds
+2026-05-15 03:42:41,148 - INFO - Retrying request to /chat/completions in 0.991208 seconds
+2026-05-15 03:42:41,150 - INFO - Retrying request to /chat/completions in 0.979117 seconds
+2026-05-15 03:42:41,185 - INFO - Retrying request to /chat/completions in 0.807508 seconds
+2026-05-15 03:42:41,988 - ERROR - Error processing page 1: Exception from the 'vlm' worker: Connection error.
+2026-05-15 03:49:27,572 - INFO - Processing PDF: uploads/9b471174-de52-4906-abb3-84ac48753ab7.pdf
+2026-05-15 03:49:27,756 - INFO - Processing page 1/1
+2026-05-15 03:49:35,513 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 03:49:35,549 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 03:49:35,550 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 03:49:35,550 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 03:49:35,557 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 03:49:35,562 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 03:49:35,696 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 03:49:35,700 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 03:49:35,738 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 03:49:35,781 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 03:49:35,824 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 03:49:36,684 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 03:49:41,323 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 03:50:11,179 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 03:50:11,181 - INFO - Page 1 processed successfully
+2026-05-15 04:15:35,971 - INFO - Processing Image: uploads/11b77792-f0a2-41e3-899b-0fa1a7370951.jpg
+2026-05-15 04:15:35,972 - INFO - Processing page 1/1
+2026-05-15 04:15:37,117 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:15:37,121 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:15:37,127 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:15:37,128 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:15:37,144 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:15:37,150 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:15:37,187 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:15:37,192 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:15:37,310 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:15:37,396 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:15:37,632 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:15:39,189 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:15:50,549 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:15:50,551 - INFO - Page 1 processed successfully
+2026-05-15 04:19:57,916 - INFO - Processing Image: uploads/88c45cbc-22ea-41e7-a799-e80bd5829ffd.jpg
+2026-05-15 04:19:57,917 - INFO - Processing page 1/1
+2026-05-15 04:19:59,089 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:19:59,091 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:19:59,093 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:19:59,096 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:19:59,105 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:19:59,110 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:19:59,128 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:19:59,230 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:19:59,308 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:19:59,693 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:20:15,845 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:20:21,366 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:20:21,367 - INFO - Page 1 processed successfully
+2026-05-15 04:45:18,059 - INFO - Processing PDF: uploads/af4c2f15-bdd3-44b5-92e8-936660659979.pdf
+2026-05-15 04:45:18,258 - INFO - Processing page 1/1
+2026-05-15 04:45:21,643 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:45:21,673 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:45:21,674 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:45:21,675 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:45:21,685 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:45:21,694 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:45:21,824 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:45:21,833 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:45:21,866 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:45:21,915 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:45:21,951 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:45:22,854 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:45:27,323 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:45:54,732 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-15 04:45:54,734 - INFO - Page 1 processed successfully
+2026-05-19 03:03:22,971 - INFO - Processing Image: uploads/2149081f-ca31-4f79-84d9-b8d61b6a1c39.jpg
+2026-05-19 03:03:22,972 - INFO - Processing page 1/1
+2026-05-19 03:03:33,082 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,106 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,110 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,115 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,120 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,126 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,128 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,128 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,131 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,136 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,147 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,148 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,152 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,154 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,236 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,238 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,239 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,241 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,242 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,245 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,250 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,257 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,258 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,259 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,263 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,268 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,275 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,315 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:33,698 - INFO - HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:40,861 - INFO - HTTP Request: POST http://localhost:8001/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 03:03:40,863 - INFO - Page 1 processed successfully

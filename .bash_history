@@ -1,239 +1,3 @@
-python main.py 
-clear
-nvidia-smi
-nvidia-smi
-clear
-nvidia-smi
-conda
-conda env
-conda --version
-clear
-nvidia-smi
-clear
-nvidia-smi
-jupyter --version
-clear
-uv
-uv --version
-claer
-clear
-docker --version
-clear
-pip 
-pip list
-clear
-python -m venv .venv_paddleocr
-CLEAR
-clear
-nvidia-smi
-nvcc --version
- python -m pip install paddlepaddle-gpu==3.3.0 -i https://www.paddlepaddle.org.cn/packages/stable/cu130/
-paddle --version
-python -m pip install -U "paddleocr[doc-parser]"
-paddleocr doc_parser -i https://paddle-model-ecology.bj.bcebos.com/paddlex/imgs/demo_image/paddleocr_vl_demo.png
-paddleocr doc_parser -i ./paddleocr_vl_demo.png
-[200~paddleocr --image_dir ./doc/imgs_en/img_12.jpg --use_angle_cls True --lang en
-~clea
-clear
-paddleocr --image_dir ./invoice_example7.png --lang en
-paddleocr --help
-paddle --help
-paddle -h
-paddle
-clear
-python -m pip install vllm
-paddleocr install_genai_server_deps vllm
-pip check
-pip install numpy==1.26.4
-pip install cuda-python==13.0.3 cuda-bindings==13.0.3
-pip check
-pip install "opencv-python-headless<4.10.0"
-pip install torch==2.8.0+cu128 torchvision==0.23.0+cu128 --extra-index-url https://download.pytorch.org/whl/cu128
-pip check
-pip uninstall vllm torchaudio torchvision torch opencv-python-headless
-pip check
-python -m pip install paddlepaddle-gpu==3.3.0 -i https://www.paddlepaddle.org.cn/packages/stable/cu130/
-python -m pip install -U "paddleocr[doc-parser]"
-python -m pip install https://paddle-whl.bj.bcebos.com/nightly/cu126/safetensors/safetensors-0.6.2.dev0-cp38-abi3-linux_x86_64.whl
-node -v
-npm -v
-[200~npm install -g @google/gemini-cli
-npm install -g @google/gemini-cli
-pwd
-gemini
-gemini
-pip check
-clear
-pip check
-pip install torch --dry-run
-uv --version
-uv pip install torch
-pip check
-uv pip install paddle
-pip check
-pip-tools
-uv pip uninstall paddle cftime kintera netcdf4 pydisort pyharp snapy
-uv pip install torch torchvision paddlepaddle-gpu==3.3.0 cuda-python==13.0.3
-pip check
-python --version
-conda create -n vllm_engine python=3.10 -y
-pip install vllm --dry-run
-clear
-conda create -n vllm_engine python=3.10 -y
-clear
-clear
-claer
-clear
-conda create -n vllm_engine python=3.10 -y
-uv venv vllm_engine --python 3.10
-python -m venv .venv_vlm
-source vllm_engine/bin/activate
-uv pip tree
-uv pip install vllm --dry-run
-uv pip install vllm
-vllm --version
-vllm --help
-vllm --help
-clear
-./vllm_engine
-cd ./vllm_engine
-lss
-ls
-cd bin/
-ls
-cd ../..
-ls
-clear
-source vllm_engine/bin/activate
-vllm --version
-paddleocr --version
-paddleocr --version
-paddleocr install_genai_server_deps vllm
-paddle --version
-paddle --version
-pip check
-pip check
-vllm --version
-deactivate
-conda activate cloudspace
-uv pip install numpy==1.26.4 paddlepaddle-gpu==3.3.0 torch torchvision cuda-python==13.0.3 --reinstall-package paddlepaddle-gpu
-uv pip install numpy==1.26.4 paddlepaddle-gpu==3.3.0 torch torchvision cuda-python==13.0.3
-pip check
-paddle --version
-paddleocr --version
-uv pip uninstall vllm
-uv pip install numpy==1.26.4
-pip install --force-reinstall paddlepaddle-gpu==3.3.0 --no-deps
-pip install --force-reinstall paddlepaddle-gpu==3.3.0 --no-deps -i https://www.paddlepaddle.org.cn/packages/stable/cu130/
-pip check
-paddleocr --version
-paddle --version
-uv pip install "opencv-python-headless<4.10.0" "cupy-cuda12x<14.0.0"
-pip check
-vllm --version
-source vllm_engine/bin/activate
-vllm --version
-uv pip install vllm --dry-run
-paddleocr genai_server --model_name PaddleOCR-VL-1.5-0.9B --backend vllm --port 8118
-clear
-clear
-source vllm_engine/bin/activate
-clear
-uv pip install safetensors --dry-run
-source vllm_engine
-uv venv vllm_engine --python 3.10
-clear
-source vllm_engine/bin/activate
-clear
-vllm serve PaddlePaddle/PaddleOCR-VL   --trust-remote-code   --max-num-batched-tokens 16384   --no-enable-prefix-caching   --mm-processor-cache-gb 0   --port 8000
-clear
-ping
-clear
-vllm serve PaddlePaddle/PaddleOCR-VL   --trust-remote-code   --max-num-batched-tokens 16384   --no-enable-prefix-caching   --mm-processor-cache-gb 0   --port 8000
-python -m vllm.entrypoints.openai.api_server --model PaddlePaddle/PaddleOCR-VL-1.5 --port 8000
-vllm --version
-vllm
-vllm
-vllm
-clear
-deactivate 
-rm -rf vllm_engine
-clear
-uv venv vllm_engine --python 3.10
-source vllm_engine/bin/activate
-pip check
-vllm --version
-clear
-uv pip install vllm
-vllm --version
-pip check
-pip check
-clear
-vllm serve PaddlePaddle/PaddleOCR-VL   --trust-remote-code   --max-num-batched-tokens 16384   --no-enable-prefix-caching   --mm-processor-cache-gb 0   --port 8000
-clear
-source vllm_engine/bin/activate 
-vllm serve PaddlePaddle/PaddleOCR-VL   --trust-remote-code   --max-num-batched-tokens 16384   --no-enable-prefix-caching   --mm-processor-cache-gb 0   --port 8000
-vllm serve PaddlePaddle/PaddleOCR-VL   --trust-remote-code   --max-num-batched-tokens 4096   --no-enable-prefix-caching   --mm-processor-cache-gb 0   --port 8000
-vllm serve PaddlePaddle/PaddleOCR-VL   --trust-remote-code   --max-num-batched-tokens 4096   --no-enable-prefix-caching   --mm-processor-cache-gb 0   --port 8000 --gpu-memory-utilization 0.6
-clear
-source vllm_engine/bin/activate
-vllm serve Qwen/Qwen2.5-1.5B   --trust-remote-code   --gpu-memory-utilization 0.3   --max-num-batched-tokens 4096   --no-enable-prefix-caching   --mm-processor-cache-gb 0   --served-model-name Qwen2.5-1.5B   --port 8001
-vllm serve Qwen/Qwen2.5-1.5B   --trust-remote-code   --gpu-memory-utilization 0.2   --max-num-batched-tokens 4096   --no-enable-prefix-caching   --mm-processor-cache-gb 0   --served-model-name Qwen2.5-1.5B   --port 8001
-vllm serve PaddlePaddle/PaddleOCR-VL   --trust-remote-code   --max-num-batched-tokens 16384 --no-enable-prefix-caching   --mm-processor-cache-gb 0   --port 8000 --gpu-memory-utilization 0.6
-pwd
-uv --help
-source vllm_engine/bin/activate
-clear
-clear
-clear
-vllm serve Qwen/Qwen2.5-1.5B   --trust-remote-code   --gpu-memory-utilization 0.2   --max-num-batched-tokens 2048   --no-enable-prefix-caching   --mm-processor-cache-gb 0   --served-model-name Qwen2.5-1.5B   --port 8001
-clear
-vllm serve Qwen/Qwen2.5-1.5B   --trust-remote-code   --gpu-memory-utilization 0.3   --max-num-batched-tokens 2048   --no-enable-prefix-caching   --mm-processor-cache-gb 0   --served-model-name Qwen2.5-1.5B   --port 8001
-cdd /
-cd /
-ls
-cd cache/
-ls
-cd chunks/
-ls
-ls -a
-cd /
-ls
-cd bin ls
-cd bin/ ls
-cd bin/
-ls
-clear
-cd /
-ls
-vllm serve Qwen/Qwen2.5-1.5B   --trust-remote-code   --gpu-memory-utilization 0.2575   --max-num-batched-tokens 2048   --no-enable-prefix-caching   --mm-processor-cache-gb 0   --served-model-name Qwen2.5-1.5B   --port 8001
-vllm serve Qwen/Qwen2.5-1.5B   --trust-remote-code   --gpu-memory-utilization 0.4   --max-num-batched-tokens 2048   --no-enable-prefix-caching   --mm-processor-cache-gb 0   --served-model-name Qwen2.5-1.5B   --port 8001
-cd /
-ls
-cd home/
-ls
-cd zeus/
-ls
-cd content/
-l
-ls
-cd ..
-ls
-cd ..
-ls
-cd linuxbrew
-ls
-ls -a
-cd /home/
-ls
-cd ..
-ls
-vllm serve Qwen/Qwen2.5-1.5B   --trust-remote-code   --gpu-memory-utilization 0.4   --max-num-batched-tokens 2048   --no-enable-prefix-caching --max-model-len 2048   --mm-processor-cache-gb 0   --served-model-name Qwen2.5-1.5B   --port 8001
-nvidia-smi
-clear
-/home/zeus/miniconda3/envs/cloudspace/bin/python /teamspace/studios/this_studio/chat.py
-clear
-clear
 clear
 source vllm_engine/bin/activate
 source vllm_engine/bin/activate
@@ -440,4 +204,298 @@ vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.25 -
 python app2.py
 vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.4 --max-model-len 8096 --max-num-batched-tokens 2048 --no-enable-prefix-caching --mm-processor-cache-gb 0 --port 8000
 gemini
+git status
+git add .
+git status
+git commit -m "v1.2 AppV2"
+git push origin main
+clear
+gemini
+exit
+gemini
+gemini
+clear
+gemini
+gemini
+exit
+gemini
+exit
+source vllm_engine/bin/activate
+source vllm_engine/bin/activate
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.25 --max-num-batched-tokens 512 --no-enable-prefix-caching --max-model-len 2048 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8001
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.4 --max-model-len 8096 --max-num-batched-tokens 2048 --no-enable-prefix-caching --mm-processor-cache-gb 0 --port 8000
+clear
+clear
+exit
+exit
+app2.py
+clear
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.25 --max-num-batched-tokens 512 --no-enable-prefix-caching --max-model-len 2048 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8001
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.25 --max-num-batched-tokens 512 --no-enable-prefix-caching --max-model-len 4096 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8001
+CLEAR
+clear
+python app2.py
+clear
+vllm serve Qwen/Qwen2.5-3B --trust-remote-code --gpu-memory-utilization 0.25 --max-num-batched-tokens 512 --no-enable-prefix-caching --max-model-len 4096 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-3B --port 8001
+python app2.py
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.4 --max-model-len 8096 --max-num-batched-tokens 2048 --no-enable-prefix-caching --mm-processor-cache-gb 0 --port 8000
+gemini
+gemini
+exit
+source vllm_engine/bin/activate
+start_servers.sh
+ps aux | grep vllm
+clear
+exit
+source vllm_engine/bin/activate
+source vllm_engine/bin/activate
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.4 --max-model-len 8096 --max-num-batched-tokens 2048 --no-enable-prefix-caching --mm-processor-cache-gb 0 --port 8000
+python3 -m src.api.main
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.25 --max-num-batched-tokens 512 --no-enable-prefix-caching --max-model-len 2048 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8001
+exit
+exit
+python3 -m src.api.main
+exit
+uv pip install requirements.txt --dry-run
+uv pip install requests psutil --dry-run
+uv pip install psutil requests
+python3 -m src.api.main
+source vllm_engine/bin/activate
+python3 -m src.api.main
+clear
+exit
+python3 -m src.api.main
+exit
+gemini
+exit
+gemini
+exit
+python3 -m src.api.main
+python3 -m src.api.main
+clear
+python3 -m src.api.main
+clear
+source vllm_engine/bin/activate
+source vllm_engine/bin/activate
+python3 -m src.api.main
+clear
+exit
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.25 --max-num-batched-tokens 512 --no-enable-prefix-caching --max-model-len 2048 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8001
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.3 --max-num-batched-tokens 512 --no-enable-prefix-caching --max-model-len 4096 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8001
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.3 --max-num-batched-tokens 512 --no-enable-prefix-caching --max-model-len 4096 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8001
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.4 --max-model-len 8096 --max-num-batched-tokens 2048 --no-enable-prefix-caching --mm-processor-cache-gb 0 --port 8000
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.3 --max-num-batched-tokens 512 --no-enable-prefix-caching --max-model-len 8000 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8001
+python3 -m src.api.main
+gemini
+exit
+python3 -m src.api.main
+eixt
+exit
+source vllm_engine/bin/activate
+source vllm_engine/bin/activate
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.4 --max-model-len 8192 --max-num-batched-tokens 2048 --no-enable-prefix-caching --mm-processor-cache-gb 0 --port 8000
+EXIT
+exit
+source vllm_engine/bin/activate
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.30 --max-num-batched-tokens 512 --no-enable-prefix-caching --max-model-len 8000 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8001
+gemini
+clear
+python3 -m src.api.main
+exit
+python3 -m src.api.main
+clear
+gemini
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.4 --max-model-len 32768 --max-num-batched-tokens 2048 --no-enable-prefix-caching --mm-processor-cache-gb 0 --port 8000
+exit
+gemini
+exit
+source vllm_engine/bin/activate
+source vllm_engine/bin/activate
+python3 -m src.api.main
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.4 --max-model-len 32768 --max-num-batched-tokens 2048 --no-enable-prefix-caching --mm-processor-cache-gb 0 --port 8000
+clear
+exi
+exit
+source vllm_engine/bin/activate
+source vllm_engine/bin/activate
+clear
+clear
+python3 -m src.api.main
+clear
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.30 --max-num-batched-tokens 512 --no-enable-prefix-caching --max-model-len 8000 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8001
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.30 --max-num-batched-tokens 512 --no-enable-prefix-caching --max-model-len 30000 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8001
+c
+clear
+python3 -m src.api.main
+clear
+python3 -m src.api.main
+clear
+python3 -m src.api.main
+clear
+python3 -m src.api.main
+python3 -m src.api.main
+gemini
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.30 --max-num-batched-tokens 512 --no-enable-prefix-caching --max-model-len 8000 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8001
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.4 --max-model-len 32768 --max-num-batched-tokens 2048 --no-enable-prefix-caching --mm-processor-cache-gb 0 --port 8000
+exit
+source vllm_engine/bin/activate
+source vllm_engine/bin/activate
+python3 -m src.api.main
+python3 -m src.api.main
+exit
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.30 --max-num-batched-tokens 512 --no-enable-prefix-caching --max-model-len 8000 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8001
+clear
+vllm serve Qwen/Qwen3-4B-AWQ   --trust-remote-code   --quantization awq   --gpu-memory-utilization 0.3   --max-model-len 8000   --served-model-name Qwen3-4B-AWQ   --port 8001
+vllm serve Qwen/Qwen3-4B-AWQ   --trust-remote-code   --quantization awq   --gpu-memory-utilization 0.4   --max-model-len 8000   --served-model-name Qwen3-4B-AWQ   --port 8001
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.4 --max-model-len 32768 --max-num-batched-tokens 2048 --no-enable-prefix-caching --mm-processor-cache-gb 0 --port 8000
+python3 -m src.api.main
+clear
+python3 -m src.api.main
+clear
+clear
+vllm chat --url http://localhost:8001/v1 --quick "What id docker containers"
+source vllm_engine/bin/activate
+vllm chat --url http://localhost:8001/v1 --quick "What is docker containers"
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.3 --max-model-len 32768 --max-num-batched-tokens 2048 --no-enable-prefix-caching --mm-processor-cache-gb 0 --port 8000
+source vllm_engine/bin/activate
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.4 --max-model-len 32768 --max-num-batched-tokens 2048 --no-enable-prefix-caching --mm-processor-cache-gb 0 --port 8000
+clear
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.30 --max-num-batched-tokens 512 --no-enable-prefix-caching --max-model-len 8000 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8001
+clear
+vllm chat --url http://localhost:8002/v1 --quick "What is docker containers"
+vllm chat --url http://localhost:8002/v1 --quick "What is docker containers"
+vllm chat http://localhost:8002/v1 --quick "What is docker containers"
+vllm chat --url http://localhost:8002/v1 --quick "Hello"
+vllm chat --url http://localhost:8002/v1 --quick "What is your role"
+vllm chat --url http://localhost:8002/v1 --quick "Your name is Jackson. What is you name?"
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.30 --max-num-batched-tokens 512 --no-enable-prefix-caching --max-model-len 8000 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8002
+vllm serve Qwen/Qwen3-4B-AWQ   --trust-remote-code   --quantization awq   --gpu-memory-utilization 0.4   --max-model-len 8000   --served-model-name Qwen3-4B-AWQ   --port 8001
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.30 --max-num-batched-tokens 1024 --no-enable-prefix-caching --max-model-len 8000 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8002
+vllm chat --url http://localhost:8002/v1 --quick "Your name is Jackson. What is you name?"
+vllm chat --url http://localhost:8002/v1 --quick "Your name is Jackson. What is you name?"
+vllm chat --url http://localhost:8002/v1 --quick "What is the capital of America"
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.30 --max-num-batched-tokens 1024 --no-enable-prefix-caching --max-model-len 8000 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8002
+vllm chat --url http://localhost:8001/v1 --quick "What is the capital of America"
+vllm chat --url http://localhost:8000/v1 --quick "What is the capital of America"
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.30 --max-num-batched-tokens 1024 --no-enable-prefix-caching --max-model-len 8000 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8000
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --enforce-eager~ --gpu-memory-utilization 0.30 --max-num-batched-tokens 1024 --no-enable-prefix-caching --max-model-len 8000 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8000
+clear
+vllm chat --url http://localhost:8000/v1 --quick "What is the capital of America"
+vllm chat --url http://localhost:8000/v1 --quick "Fuck you"
+uv pip install "huggingface_hub[cli]" --dry-run
+uv pip install "huggingface_hub[cli]"
+huggingface-cli scan-cache
+huggingface-cli delete-cache
+huggingface-cli delete-cache
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --enforce-eager --gpu-memory-utilization 0.30 --max-num-batched-tokens 1024 --no-enable-prefix-caching --max-model-len 8000 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8000
+clear
+vllm chat --url http://localhost:8000/v1 --quick "Hi"
+vllm chat --url http://localhost:8001/v1 --quick "Hi"
+vllm chat --url http://localhost:8001/v1 --quick "What is docker containers?"
+python3 -m src.api.main
+clear
+vllm chat --url http://localhost:8001/v1 --quick "What is the tallest building?"
+vllm chat --url http://localhost:8001/v1 "What is the tallest building?"
+vllm chat --help
+python3 -m src.api.main
+clear
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.30 --max-num-batched-tokens 1024 --no-enable-prefix-caching --max-model-len 8000 --mm-processor-cache-gb 0 --served-model-name Qwen2.5-1.5B --port 8001
+vllm chat --url http://localhost:8002/v1 --quick "What is the tallest building? Do not think"
+vllm serve Qwen/Qwen3-4B-AWQ   --trust-remote-code   --gpu-memory-utilization 0.4   --max-model-len 8000   --served-model-name Qwen3-4B-AWQ   --port 8002
+python3 -m src.api.main
+clear
+clear
+gemini
+python3 -m src.api.main
+clear
+vllm serve Qwen/Qwen3-4B-AWQ   --trust-remote-code   --gpu-memory-utilization 0.4   --max-model-len 8000   --served-model-name Qwen3-4B-AWQ   --port 8002
+clear
+python3 -m src.api.main
+gemini
+vllm serve Qwen/Qwen3-4B-AWQ   --trust-remote-code   --gpu-memory-utilization 0.4   --max-model-len 8000   --served-model-name Qwen3-4B-AWQ   --port 8001
+xit
+exit
+source vllm_engine/bin/activate
+source vllm_engine/bin/activate
+vllm serve Qwen/Qwen3-4B-AWQ --trust-remote-code --gpu-memory-utilization 0.40 --max-num-batched-tokens 1024 --max-model-len 8000 --served-model-name Qwen3-4B-AWQ --port 8001
+exit
+source vllm_engine/bin/activate
+source vllm_engine/bin/activate
+vllm serve Qwen/Qwen3-4B-AWQ --trust-remote-code --gpu-memory-utilization 0.40 --max-num-batched-tokens 1024 --max-model-len 8000 --served-model-name Qwen3-4B-AWQ --port 8001
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.4 --max-model-len 32768 --max-num-batched-tokens 2048 --no-enable-prefix-caching --mm-processor-cache-gb 0 --port 8000
+vllm serve Qwen/Qwen3-4B-AWQ --trust-remote-code --gpu-memory-utilization 0.40 --max-num-batched-tokens 1024 --max-model-len 8000 --served-model-name Qwen3-4B-AWQ --port 8001
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.3 --max-model-len 32768 --max-num-batched-tokens 2048 --no-enable-prefix-caching --mm-processor-cache-gb 0 --port 8000
+clear
+clear
+/home/zeus/miniconda3/envs/cloudspace/bin/python /teamspace/studios/this_studio/chat.py
+clear
+python3 -m src.api.main
+clear
+uv pip install sse-starlette  --dry-run
+python3 -m src.api.main
+clear
+python3 -m src.api.main
+clear
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.3 --max-model-len 32768 --max-num-batched-tokens 2048 --no-enable-prefix-caching --mm-processor-cache-gb 0 --port 8000
+python3 -m src.api.main
+gemini
+gemini
+clear
+exit
+source vllm_engine/bin/activate
+python chat.py 
+clear
+python chat.py 
+python chat.py 
+python chat.py 
+clear
+source vllm_engine/bin/activate
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.4 --max-model-len 32768 --max-num-batched-tokens 2048 --no-enable-prefix-caching --mm-processor-cache-gb 0 --port 8000
+clear
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.4 --max-model-len 32768 --max-num-batched-tokens 2048 --no-enable-prefix-caching --mm-processor-cache-gb 0 --port 8000
+clear
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.30 --max-model-len 32768 --max-num-batched-tokens 2048 --no-enable-prefix-caching --mm-processor-cache-gb 0 --port 8000
+EXIT
+exit
+source vllm_engine/bin/activate
+source vllm_engine/bin/activate
+vllm serve Qwen/Qwen3-4B-AWQ --trust-remote-code --gpu-memory-utilization 0.40 --max-num-batched-tokens 1024 --max-model-len 8000 --served-model-name Qwen3-4B-AWQ --port 8001
+vllm serve Qwen/Qwen3-4B-AWQ --trust-remote-code --gpu-memory-utilization 0.40 --max-model-len 8000 --served-model-name Qwen3-4B-AWQ --port 8001
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.30 --max-model-len 32768 --port 8000
+clear
+python chat.py 
+vllm serve Qwen/Qwen3-4B-AWQ --trust-remote-code --gpu-memory-utilization 0.80 --max-model-len 8000 --served-model-name Qwen3-4B-AWQ --port 8001
+vllm serve Qwen/Qwen2.5-1.5B --trust-remote-code --gpu-memory-utilization 0.4 --max-num-batched-tokens 512 --no-enable-prefix-caching --max-model-len 8000 --mm-processor-cache-gb 0 --served-model-name Qwen3-4B-AWQ --port 8001
+clear
+vllm serve Qwen/Qwen3-4B-AWQ --trust-remote-code --gpu-memory-utilization 0.4 --max-num-batched-tokens 512 --no-enable-prefix-caching --max-model-len 8000 --mm-processor-cache-gb 0 --served-model-name Qwen3-4B-AWQ --port 8001
+vllm serve Qwen/Qwen3-4B-AWQ   --trust-remote-code   --quantization awq   --gpu-memory-utilization 0.40   --max-model-len 8000   --served-model-name Qwen3-4B-AWQ   --port 8001
+hf --help
+hf delete-cache
+huggingface-cli delete-cache
+huggingface-cli delete-cache
+python test_pipeline_llm.py 
+python3 -m src.api.main
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.30 --max-model-len 32768 --port 8000
+gemini
+exit
+gemini
+clear
+gemini
+exit
+gemini
+source vllm_engine/bin/activate
+source vllm_engine/bin/activate
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.30 --max-model-len 32768 --max-num-batched-tokens 2048 --no-enable-prefix-caching --mm-processor-cache-gb 0 --port 8000
+clear
+python3 -m src.api.main
+clear
+python3 -m src.api.main
+clear
+python3 -m src.api.main
+vllm serve PaddlePaddle/PaddleOCR-VL --trust-remote-code --gpu-memory-utilization 0.30 --max-model-len 32768 --max-num-batched-tokens 2048 --no-enable-prefix-caching --mm-processor-cache-gb 0 --port 8000
+exit
+gemini
+exit
+source vllm_engine/bin/activate
+source vllm_engine/bin/activate
 git status

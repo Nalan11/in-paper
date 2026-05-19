@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Doc Intelligence V3 - Full Dashboard</title>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-hover: #4f46e5;
+            --bg: #0f172a;
+            --card: #1e293b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --danger: #ef4444;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --border: #334155;
+            --terminal: #000000;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card {
+            background-color: var(--card);
+            border-radius: 1rem;
+            padding: 2rem;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        /* Tabs */
+        .main-tabs {
+            display: flex;
+            width: 20%;
+            justify-content: flex-end;
+            gap:1rem;
+            margin-bottom: 2rem;
+            background: rgba(30, 41, 59, 0.5);
+            padding: 0.5rem;
+            border-radius: 0.75rem;
+            border: 1px solid var(--border);
+        }
+
+        .main-tab {
+            /* flex: 1; */
+            padding: 1rem 2rem;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: all 0.2s;
+            color: var(--text-muted);
+        }
+
+        .main-tab.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Infrastructure Styles */
+        .infra-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .server-card {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .status-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .badge-stopped { background: rgba(239, 68, 68, 0.2); color: #f87171; }
+        .badge-starting { background: rgba(245, 158, 11, 0.2); color: #fbbf24; }
+        .badge-healthy { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+
+        .terminal-window {
+            background: var(--terminal);
+            height: 350px;
+            border-radius: 0.75rem;
+            padding: 1rem;
+            overflow-y: auto;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            color: #d1d5db;
+            border: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .log-entry { margin-bottom: 0.25rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.1rem; }
+        .log-info { color: #60a5fa; }
+        .log-error { color: #f87171; }
+
+        .controls {
+            display: flex;
+            gap: 1rem;
+        }
+
+        button {
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            transition: opacity 0.2s;
+        }
+
+        .btn-start { background: var(--success); color: white; }
+        .btn-stop { background: var(--danger); color: white; }
+        .btn-clear { background: var(--border); color: var(--text); }
+
+        button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+        /* Processor Styles */
+        .upload-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+        #upload-area {
+            border: 2px dashed var(--border);
+            border-radius: 1rem;
+            padding: 3rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: rgba(30, 41, 59, 0.5);
+            min-height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #upload-area:hover { border-color: var(--primary); background: rgba(79, 70, 229, 0.1); }
+        #upload-area.active { border-color: var(--success); background: rgba(16, 185, 129, 0.1); }
+
+        .preview-container { border: 1px solid var(--border); border-radius: 1rem; background: #0f172a; height: 600px; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
+        #image-preview { max-width: 100%; max-height: 100%; object-fit: contain; display: none; }
+        .preview-placeholder { color: var(--text-muted); font-size: 0.875rem; text-align: center; width: 100%; height: 100%; }
+
+        .timer-display { font-family: 'JetBrains Mono', monospace; font-size: 2.5rem; color: var(--primary); text-align: center; margin: 1rem 0; font-weight: 700; }
+        .stats-bar { display: flex; gap: 1.5rem; margin-top: 1.5rem; font-size: 0.875rem; color: var(--text-muted); justify-content: center; border-top: 1px solid var(--border); padding-top: 1rem; }
+        .stat-item span { color: var(--text); font-weight: 600; }
+
+        /* Results Layout */
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        .data-label { color: var(--text-muted); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        .data-value { font-size: 1rem; margin-bottom: 0.75rem; font-weight: 500; }
+
+        /* Table Styles */
+        .table-wrapper { overflow-x: auto; margin-top: 1.5rem; border: 1px solid var(--border); border-radius: 0.5rem; }
+        table { width: 100%; border-collapse: collapse; text-align: left; }
+        th { background: #334155; padding: 0.75rem 1rem; font-size: 0.875rem; }
+        td { padding: 0.75rem 1rem; border-top: 1px solid var(--border); font-size: 0.875rem; }
+        .financials-summary { margin-top: 1.5rem; padding-top: 1.5rem; border-top: 2px solid var(--border); text-align: right; }
+        .total-row { font-size: 1.5rem; font-weight: 700; color: var(--success); }
+
+        .tabs { display: flex; gap: 1rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border); }
+        .tab { padding: 0.5rem 1rem; cursor: pointer; color: var(--text-muted); }
+        .tab.active { color: var(--primary); border-bottom: 2px solid var(--primary); font-weight: 600; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .result-section { display: none; }
+        .result-section.active { display: block; }
+        pre { background: #000; padding: 1.5rem; border-radius: 0.75rem; overflow-x: auto; font-family: 'JetBrains Mono', monospace; font-size: 0.875rem; color: #10b981; }
+
+        .hidden { display: none; }
+        .validation-banner { background: rgba(239, 68, 68, 0.1); border: 1px solid var(--danger); color: #fca5a5; padding: 1rem; border-radius: 0.75rem; margin-bottom: 1.5rem; display: none; }
+
+        /* Pipeline Visualizer */
+        .pipeline-container { margin-top: 2rem; padding: 1.5rem; background: var(--bg); border: 1px solid var(--border); border-radius: 1rem; display: flex; align-items: center; justify-content: space-between; position: relative; }
+        .pipeline-node { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; z-index: 10; width: 100px; }
+        .node-circle { width: 3rem; height: 3rem; border-radius: 50%; background: var(--card); border: 2px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; transition: all 0.3s; position: relative; }
+        .node-label { font-size: 0.75rem; font-weight: 600; color: var(--text-muted); text-align: center; text-transform: uppercase; letter-spacing: 0.05em; transition: color 0.3s; }
+        .pipeline-line { flex: 1; height: 4px; background: var(--border); margin: 0 1rem; position: relative; top: -1rem; transition: background 0.3s; }
+        
+        /* Node States */
+        .node-active .node-circle { border-color: var(--primary); background: rgba(99, 102, 241, 0.2); box-shadow: 0 0 15px rgba(99, 102, 241, 0.5); animation: pulse-node 1.5s infinite; }
+        .node-active .node-label { color: var(--primary); }
+        .node-done .node-circle { border-color: var(--success); background: rgba(16, 185, 129, 0.2); color: var(--success); }
+        .node-done .node-label { color: var(--success); }
+        .line-active { background: var(--primary); box-shadow: 0 0 10px rgba(99, 102, 241, 0.5); }
+        .line-done { background: var(--success); }
+        
+        @keyframes pulse-node {
+            0% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(99, 102, 241, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>AI Doc Intelligence V3</h1>
+        <p style="color: var(--text-muted)">High-precision extraction with Infrastructure Management</p>
+    </header>
+
+    <div class="main-tabs">
+        <div class="main-tab active" id="tab-processor-btn" onclick="switchMainTab('processor')">Document Processor</div>
+        <div class="main-tab" id="tab-infra-btn" onclick="switchMainTab('infra')">Infrastructure Control</div>
+    </div>
+
+    <!-- Processor Tab -->
+    <div id="section-processor" class="main-section">
+        <div class="card">
+            <div class="upload-grid">
+                <div class="upload-controls">
+                    <div id="upload-area">
+                        <p id="file-name" style="font-size: 1.125rem; font-weight: 500;">Drop Invoice Image or PDF Here</p>
+                        <p style="color: var(--text-muted); font-size: 0.875rem; margin-top: 0.5rem;">Click to browse or drag & drop</p>
+                        <input type="file" id="file-input" hidden accept="image/*,.pdf">
+                    </div>
+                    <div class="processing-controls" style="margin-top: 2rem;">
+                        <div class="timer-display" id="timer">00:00.0</div>
+                        <button id="process-btn" class="btn-start" style="width: 100%" disabled>Process Document</button>
+                    </div>
+                </div>
+                <div class="preview-container">
+                    <div class="preview-placeholder" id="preview-placeholder">Image Preview will appear here</div>
+                    <img id="image-preview" alt="Invoice Preview">
+                </div>
+            </div>
+            
+            <div id="pipeline-visualizer" class="pipeline-container hidden">
+                <div class="pipeline-node" id="node-ingest">
+                    <div class="node-circle">📥</div>
+                    <div class="node-label">Ingestion</div>
+                </div>
+                <div class="pipeline-line" id="line-1"></div>
+                <div class="pipeline-node" id="node-vlm">
+                    <div class="node-circle">👁️</div>
+                    <div class="node-label">VLM (Vision)</div>
+                </div>
+                <div class="pipeline-line" id="line-2"></div>
+                <div class="pipeline-node" id="node-llm">
+                    <div class="node-circle">🧠</div>
+                    <div class="node-label">LLM (Reasoning)</div>
+                </div>
+                <div class="pipeline-line" id="line-3"></div>
+                <div class="pipeline-node" id="node-save">
+                    <div class="node-circle">💾</div>
+                    <div class="node-label">Storage</div>
+                </div>
+            </div>
+
+            <div class="stats-bar hidden" id="timings-bar">
+                <div class="stat-item">VLM (OCR): <span id="vlm-time">0s</span></div>
+                <div class="stat-item">LLM (Extraction): <span id="llm-time">0s</span></div>
+                <div class="stat-item">Total Pipeline: <span id="total-time">0s</span></div>
+            </div>
+        </div>
+
+        <div id="results-area" class="hidden">
+            <div id="validation-error" class="validation-banner">
+                <strong>⚠️ Validation Warning:</strong>
+                <ul id="error-list" style="margin: 0.5rem 0 0 1.5rem;"></ul>
+            </div>
+
+            <div class="tabs">
+                <div class="tab active" id="tab-visual-view-btn" onclick="switchResultTab('visual-view')">Visual Merged View</div>
+                <div class="tab" id="tab-diag-view-btn" onclick="switchResultTab('diag-view')">Glass Pipeline Diagnostics</div>
+                <div class="tab" id="tab-json-view-btn" onclick="switchResultTab('json-view')">Full JSON Response</div>
+            </div>
+
+            <!-- 1. Visual Merged View -->
+            <div id="section-visual-view" class="result-section active">
+                <div class="grid-2">
+                    <div class="card" style="margin-bottom: 0;">
+                        <h3 style="margin-top: 0">Document Details</h3>
+                        <div class="grid-2">
+                            <div><div class="data-label">Type</div><div class="data-value" id="doc-type">-</div></div>
+                            <div><div class="data-label">Number</div><div class="data-value" id="doc-number">-</div></div>
+                            <div><div class="data-label">Date</div><div class="data-value" id="doc-date">-</div></div>
+                            <div><div class="data-label">Due Date</div><div class="data-value" id="doc-due">-</div></div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-bottom: 0;">
+                        <h3 style="margin-top: 0">Parties</h3>
+                        <div class="grid-2">
+                            <div>
+                                <div class="data-label">Vendor</div><div class="data-value" id="vendor-name" style="font-weight: 700">-</div>
+                                <div class="data-label">Address</div><div class="data-value" id="vendor-address" style="font-size: 0.875rem">-</div>
+                            </div>
+                            <div>
+                                <div class="data-label">Client</div><div class="data-value" id="client-name" style="font-weight: 700">-</div>
+                                <div class="data-label">Address</div><div class="data-value" id="client-address" style="font-size: 0.875rem">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h3 style="margin-top: 0">Line Items</h3>
+                    <div class="table-wrapper">
+                        <table id="line-items-table">
+                            <thead><tr><th>Description</th><th>Qty</th><th>Unit Price</th><th>Total</th></tr></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <div class="financials-summary">
+                        <div style="margin-bottom: 0.5rem">Subtotal: <span id="sum-subtotal">$0.00</span></div>
+                        <div style="margin-bottom: 1rem">Tax: <span id="sum-tax">$0.00</span></div>
+                        <div class="total-row">Total: <span id="sum-total">$0.00</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Glass Pipeline Diagnostics -->
+            <div id="section-diag-view" class="result-section hidden">
+                <div class="tabs" id="page-tabs" style="margin-top: 1rem;"></div>
+                <div id="pages-container"></div>
+            </div>
+
+            <!-- 3. Full JSON -->
+            <div id="section-json-view" class="result-section hidden">
+                <pre id="json-output-view" style="margin-top: 1rem;"></pre>
+            </div>
+        </div>
+    </div>
+
+    <!-- Infrastructure Tab -->
+    <div id="section-infra" class="main-section hidden">
+        <div class="infra-grid">
+            <div class="card server-card">
+                <div class="status-header">
+                    <h3>VLM Server (OCR/Layout)</h3>
+                    <span id="vlm-status-badge" class="badge badge-stopped">Stopped</span>
+                </div>
+                <div class="controls">
+                    <button id="vlm-start-btn" class="btn-start" onclick="controlServer('vlm', 'start')">Start VLM</button>
+                    <button id="vlm-stop-btn" class="btn-stop" onclick="controlServer('vlm', 'stop')">Stop</button>
+                    <button class="btn-clear" onclick="clearLogs('vlm')">Clear Logs</button>
+                </div>
+                <div id="vlm-terminal" class="terminal-window"></div>
+            </div>
+            <div class="card server-card">
+                <div class="status-header">
+                    <h3>LLM Server (Extraction)</h3>
+                    <span id="llm-status-badge" class="badge badge-stopped">Stopped</span>
+                </div>
+                <div class="controls">
+                    <button id="llm-start-btn" class="btn-start" onclick="controlServer('llm', 'start')">Start LLM</button>
+                    <button id="llm-stop-btn" class="btn-stop" onclick="controlServer('llm', 'stop')">Stop</button>
+                    <button class="btn-clear" onclick="clearLogs('llm')">Clear Logs</button>
+                </div>
+                <div id="llm-terminal" class="terminal-window"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // --- State & Config ---
+    const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+    const WS_BASE = `${protocol}//${window.location.host}/ws/logs/`;
+    let vlmWs = null;
+    let llmWs = null;
+    let selectedFile = null;
+    let timerInterval = null;
+    let startTime = null;
+
+    // --- Tab Switching ---
+    function switchMainTab(target) {
+        document.querySelectorAll('.main-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.main-section').forEach(s => s.classList.add('hidden'));
+        document.getElementById(`tab-${target}-btn`).classList.add('active');
+        document.getElementById(`section-${target}`).classList.remove('hidden');
+    }
+
+    function switchResultTab(target) {
+        ['visual-view', 'diag-view', 'json-view'].forEach(id => {
+            const btn = document.getElementById(`tab-${id}-btn`);
+            const section = document.getElementById(`section-${id}`);
+            if (btn) btn.classList.remove('active');
+            if (section) {
+                section.classList.remove('active');
+                section.classList.add('hidden');
+            }
+        });
+        
+        const targetBtn = document.getElementById(`tab-${target}-btn`);
+        const targetSection = document.getElementById(`section-${target}`);
+        if (targetBtn) targetBtn.classList.add('active');
+        if (targetSection) {
+            targetSection.classList.add('active');
+            targetSection.classList.remove('hidden');
+        }
+    }
+
+    function switchPageTab(pageNum) {
+        document.querySelectorAll('.page-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.page-content').forEach(c => c.classList.add('hidden'));
+        
+        document.getElementById(`tab-page-${pageNum}`).classList.add('active');
+        document.getElementById(`content-page-${pageNum}`).classList.remove('hidden');
+    }
+
+    // --- Infrastructure Logic ---
+    async function updateStatus() {
+        ['vlm', 'llm'].forEach(async (type) => {
+            try {
+                const res = await fetch(`/admin/status/${type}`);
+                if (!res.ok) return;
+                const data = await res.json();
+                const badge = document.getElementById(`${type}-status-badge`);
+                badge.textContent = data.status;
+                badge.className = `badge badge-${data.status.toLowerCase()}`;
+                document.getElementById(`${type}-start-btn`).disabled = (data.status !== 'STOPPED');
+                document.getElementById(`${type}-stop-btn`).disabled = (data.status === 'STOPPED');
+            } catch (e) {}
+        });
+    }
+
+    async function controlServer(type, action) {
+        try {
+            const res = await fetch(`/admin/${action}/${type}`, { method: 'POST' });
+            const data = await res.json();
+            if (res.ok) {
+                updateStatus();
+                if (action === 'start') connectWebSocket(type);
+            } else { throw new Error(data.detail || "Server error"); }
+        } catch (e) { alert(`Failed to ${action} ${type}: ${e.message}`); }
+    }
+
+    async function clearLogs(type) {
+        await fetch(`/admin/clear_logs/${type}`, { method: 'POST' });
+        document.getElementById(`${type}-terminal`).innerHTML = '';
+    }
+
+    function connectWebSocket(type) {
+        if (type === 'vlm' && vlmWs) vlmWs.close();
+        if (type === 'llm' && llmWs) llmWs.close();
+        const ws = new WebSocket(`${WS_BASE}${type}`);
+        const terminal = document.getElementById(`${type}-terminal`);
+        ws.onmessage = (event) => {
+            const div = document.createElement('div');
+            div.className = 'log-entry';
+            if (event.data.includes('ERROR')) div.classList.add('log-error');
+            if (event.data.includes('INFO')) div.classList.add('log-info');
+            div.textContent = event.data;
+            terminal.appendChild(div);
+            terminal.scrollTop = terminal.scrollHeight;
+            if (terminal.childNodes.length > 500) terminal.removeChild(terminal.firstChild);
+        };
+        if (type === 'vlm') vlmWs = ws; else llmWs = ws;
+    }
+
+    // --- Processor Logic ---
+    const uploadArea = document.getElementById('upload-area');
+    const fileInput = document.getElementById('file-input');
+    const processBtn = document.getElementById('process-btn');
+    const timerDisplay = document.getElementById('timer');
+
+    uploadArea.onclick = () => fileInput.click();
+    uploadArea.ondragover = (e) => { e.preventDefault(); uploadArea.classList.add('active'); };
+    uploadArea.ondragleave = () => uploadArea.classList.remove('active');
+    uploadArea.ondrop = (e) => {
+        e.preventDefault();
+        uploadArea.classList.remove('active');
+        if (e.dataTransfer.files.length > 0) handleFile(e.dataTransfer.files[0]);
+    };
+
+    fileInput.onchange = (e) => handleFile(e.target.files[0]);
+
+    function handleFile(file) {
+        if (file && (file.type.startsWith('image/') || file.type === 'application/pdf')) {
+            selectedFile = file;
+            document.getElementById('file-name').textContent = file.name;
+            processBtn.disabled = false;
+            
+            const img = document.getElementById('image-preview');
+            const placeholder = document.getElementById('preview-placeholder');
+
+            // Reset previous preview
+            img.style.display = 'none';
+            placeholder.innerHTML = "";
+            placeholder.style.display = 'none';
+
+            if (file.type.startsWith('image/')) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    img.src = e.target.result;
+                    img.style.display = 'block';
+                };
+                reader.readAsDataURL(file);
+            } else {
+                // PDF Native Viewer
+                const fileURL = URL.createObjectURL(file);
+                placeholder.innerHTML = `<iframe src="${fileURL}" style="width:100%; height:100%; border:none;"></iframe>`;
+                placeholder.style.display = 'block';
+            }
+        } else {
+            alert("Please select an image or PDF file.");
+        }
+    }
+
+    processBtn.onclick = async () => {
+        if (!selectedFile) return;
+        processBtn.disabled = true;
+        document.getElementById('results-area').classList.add('hidden');
+        document.getElementById('timings-bar').classList.add('hidden');
+        startTime = Date.now();
+        timerDisplay.textContent = "0.0s";
+        timerInterval = setInterval(() => {
+            timerDisplay.textContent = `${((Date.now() - startTime) / 1000).toFixed(1)}s`;
+        }, 100);
+
+        // Show and reset Pipeline Visualizer
+        document.getElementById('pipeline-visualizer').classList.remove('hidden');
+        document.querySelectorAll('.pipeline-node').forEach(n => { n.classList.remove('node-active', 'node-done'); });
+        document.querySelectorAll('.pipeline-line').forEach(l => { l.classList.remove('line-active', 'line-done'); });
+        document.querySelector('#node-vlm .node-label').textContent = 'VLM (Vision)';
+        document.querySelector('#node-llm .node-label').textContent = 'LLM (Reasoning)';
+
+        // Connect to SSE for real-time status
+        const eventSource = new EventSource('/stream/pipeline');
+        eventSource.onmessage = function(event) {
+            const status = event.data;
+            
+            if (status === "INGESTING") {
+                document.getElementById('node-ingest').classList.add('node-active');
+            } else if (status.startsWith("VLM_PROCESSING")) {
+                document.getElementById('node-ingest').classList.remove('node-active');
+                document.getElementById('node-ingest').classList.add('node-done');
+                document.getElementById('line-1').classList.add('line-done');
+                
+                // If bouncing back from LLM
+                document.getElementById('node-llm').classList.remove('node-active');
+                document.getElementById('line-2').classList.remove('line-active', 'line-done');
+                
+                document.getElementById('node-vlm').classList.add('node-active');
+                document.getElementById('node-vlm').classList.remove('node-done');
+                
+                const match = status.match(/PAGE_(\d+)/);
+                if (match) document.querySelector('#node-vlm .node-label').textContent = `VLM (Page ${match[1]})`;
+
+            } else if (status.startsWith("LLM_EXTRACTION")) {
+                document.getElementById('node-vlm').classList.remove('node-active');
+                document.getElementById('node-vlm').classList.add('node-done');
+                document.getElementById('line-2').classList.add('line-done', 'line-active');
+                
+                document.getElementById('node-llm').classList.add('node-active');
+                document.getElementById('node-llm').classList.remove('node-done');
+                
+                const match = status.match(/PAGE_(\d+)/);
+                if (match) document.querySelector('#node-llm .node-label').textContent = `LLM (Page ${match[1]})`;
+
+            } else if (status === "SAVING") {
+                document.getElementById('node-llm').classList.remove('node-active');
+                document.getElementById('node-llm').classList.add('node-done');
+                document.getElementById('line-3').classList.add('line-done');
+                document.getElementById('node-save').classList.add('node-active');
+                
+                document.querySelector('#node-vlm .node-label').textContent = 'VLM (Vision)';
+                document.querySelector('#node-llm .node-label').textContent = 'LLM (Reasoning)';
+            } else if (status === "DONE" || status === "ERROR") {
+                document.getElementById('node-save').classList.remove('node-active');
+                if (status === "DONE") document.getElementById('node-save').classList.add('node-done');
+                eventSource.close();
+            }
+        };
+
+        const formData = new FormData();
+        formData.append('file', selectedFile);
+
+        try {
+            const res = await fetch('/process', { method: 'POST', body: formData });
+            if (!res.ok) throw new Error("Processing failed.");
+            const data = await res.json();
+            renderResults(data);
+        } catch (e) { alert(e.message); }
+        finally { clearInterval(timerInterval); processBtn.disabled = false; }
+    };
+
+    function renderResults(data) {
+        const diagnosticPages = data.structured_data || [];
+        const timings = data.timings || {};
+
+        document.getElementById('vlm-time').textContent = `${timings.vlm_sec || 0}s`;
+        document.getElementById('llm-time').textContent = `${timings.llm_sec || 0}s`;
+        document.getElementById('total-time').textContent = `${timings.total_sec || 0}s`;
+        document.getElementById('timings-bar').classList.remove('hidden');
+
+        // --- PART 1: MERGE DATA FOR VISUAL VIEW ---
+        let mergedSD = {
+            document_details: {}, vendor_details: {}, client_details: {}, line_items: [], financials: {}, validation_errors: [], requires_human_review: false
+        };
+
+        diagnosticPages.forEach(diagObj => {
+            const sd = diagObj.stage_5_llm_json || {};
+            if (sd.requires_human_review) mergedSD.requires_human_review = true;
+            if (sd.validation_errors) mergedSD.validation_errors.push(...sd.validation_errors);
+            
+            ["document_details", "vendor_details", "client_details", "financials"].forEach(section => {
+                const sData = sd[section] || {};
+                Object.keys(sData).forEach(k => {
+                    if (sData[k] && !mergedSD[section][k]) mergedSD[section][k] = sData[k];
+                });
+            });
+            
+            if (sd.line_items) mergedSD.line_items.push(...sd.line_items);
+        });
+
+        // Validation Error
+        const banner = document.getElementById('validation-error');
+        const errorList = document.getElementById('error-list');
+        errorList.innerHTML = '';
+        if (mergedSD.requires_human_review) {
+            banner.style.display = 'block';
+            (mergedSD.validation_errors.length ? mergedSD.validation_errors : ["Unspecified error"]).forEach(err => {
+                const li = document.createElement('li'); li.textContent = err; errorList.appendChild(li);
+            });
+        } else { banner.style.display = 'none'; }
+
+        // Map Merged Data to UI
+        const dd = mergedSD.document_details || {};
+        document.getElementById('doc-type').textContent = dd.document_type || 'N/A';
+        document.getElementById('doc-number').textContent = dd.invoice_number || 'N/A';
+        document.getElementById('doc-date').textContent = dd.invoice_date || 'N/A';
+        document.getElementById('doc-due').textContent = dd.due_date || 'N/A';
+
+        const vd = mergedSD.vendor_details || {};
+        const cd = mergedSD.client_details || {};
+        document.getElementById('vendor-name').textContent = vd.company_name || 'N/A';
+        document.getElementById('vendor-address').textContent = vd.address || 'N/A';
+        document.getElementById('client-name').textContent = cd.company_name || 'N/A';
+        document.getElementById('client-address').textContent = cd.address || 'N/A';
+
+        const tbody = document.querySelector('#line-items-table tbody');
+        tbody.innerHTML = '';
+        mergedSD.line_items.forEach(item => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `<td>${item.description || 'N/A'}</td><td>${item.quantity || 0}</td><td>$${(item.unit_price||0).toFixed(2)}</td><td>$${(item.line_total||0).toFixed(2)}</td>`;
+            tbody.appendChild(tr);
+        });
+
+        const fin = mergedSD.financials || {};
+        document.getElementById('sum-subtotal').textContent = `$${(fin.subtotal||0).toFixed(2)}`;
+        document.getElementById('sum-tax').textContent = `$${(fin.tax_amount||0).toFixed(2)}`;
+        document.getElementById('sum-total').textContent = `$${(fin.total_amount||0).toFixed(2)}`;
+
+        // --- PART 2: RENDER DIAGNOSTICS TABS ---
+        const tabsContainer = document.getElementById('page-tabs');
+        const pagesContainer = document.getElementById('pages-container');
+        tabsContainer.innerHTML = '';
+        pagesContainer.innerHTML = '';
+
+        diagnosticPages.forEach((page, index) => {
+            const pNum = page.page_number;
+            const tab = document.createElement('div');
+            tab.className = `tab page-tab ${index === 0 ? 'active' : ''}`;
+            tab.id = `tab-page-${pNum}`;
+            tab.textContent = `Page ${pNum}`;
+            tab.onclick = () => switchPageTab(pNum);
+            tabsContainer.appendChild(tab);
+
+            const content = document.createElement('div');
+            content.className = `page-content ${index === 0 ? '' : 'hidden'}`;
+            content.id = `content-page-${pNum}`;
+            content.innerHTML = `
+                <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem;">
+                    <div class="card" style="margin: 0; padding: 1rem;">
+                        <h4 style="margin-top: 0; color: var(--primary);">1. VLM Raw Output (PaddleOCR)</h4>
+                        <pre style="max-height: 300px; margin: 0; font-size: 0.75rem; color: #a1a1aa;">${page.stage_1_vlm_raw || "Empty"}</pre>
+                    </div>
+                    <div class="card" style="margin: 0; padding: 1rem;">
+                        <h4 style="margin-top: 0; color: var(--primary);">2. Cleaned Text</h4>
+                        <pre style="max-height: 300px; margin: 0; font-size: 0.75rem; color: #93c5fd;">${page.stage_2_cleaned || "Empty"}</pre>
+                    </div>
+                    <div class="card" style="margin: 0; padding: 1rem;">
+                        <h4 style="margin-top: 0; color: var(--warning);">3. LLM Full Prompt Payload</h4>
+                        <pre style="max-height: 300px; margin: 0; font-size: 0.75rem; color: #fbbf24; white-space: pre-wrap;">${JSON.stringify(page.stage_3_llm_prompt, null, 2) || "Empty"}</pre>
+                    </div>
+                    <div class="card" style="margin: 0; padding: 1rem;">
+                        <h4 style="margin-top: 0; color: var(--danger);">4. LLM Raw String Output</h4>
+                        <pre style="max-height: 300px; margin: 0; font-size: 0.75rem; color: #fca5a5;">${page.stage_4_llm_raw_string || "Empty"}</pre>
+                    </div>
+                    <div class="card" style="margin: 0; padding: 1rem;">
+                        <h4 style="margin-top: 0; color: var(--success);">5. Final Parsed LLM JSON</h4>
+                        <pre style="max-height: 400px; margin: 0; font-size: 0.75rem; color: #10b981;">${JSON.stringify(page.stage_5_llm_json, null, 2) || "Empty"}</pre>
+                    </div>
+                </div>
+            `;
+            pagesContainer.appendChild(content);
+        });
+
+        // --- PART 3: RAW JSON VIEW ---
+        document.getElementById('json-output-view').textContent = JSON.stringify(diagnosticPages, null, 2);
+        document.getElementById('results-area').classList.remove('hidden');
+    }
+
+    // --- Init ---
+    setInterval(updateStatus, 3000);
+    updateStatus();
+    connectWebSocket('vlm');
+    connectWebSocket('llm');
+</script>
+</body>
+</html>

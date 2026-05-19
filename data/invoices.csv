@@ -1,0 +1,2 @@
+invoice_id,processed_at,doc_type,invoice_number,invoice_date,due_date,vendor_company,vendor_person,vendor_address,client_company,client_person,client_address,subtotal,tax_amount,total_amount,requires_human_review,validation_errors
+

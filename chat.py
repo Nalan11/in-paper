@@ -7,7 +7,7 @@ client = OpenAI(
     api_key="EMPTY" # vLLM does not require an API key by default
 )
 
-MODEL_NAME = "Qwen2.5-1.5B"
+MODEL_NAME = "Qwen3-4B-AWQ" #Qwen3-4B-AWQ #Qwen2.5-1.5B
 
 def main():
     print(f"--- Connected to local vLLM ({MODEL_NAME}) ---")
