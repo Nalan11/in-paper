@@ -53,12 +53,19 @@ To build a robust, production-grade document intelligence system that handles co
 3.  **Retry Logic (Deferred):** LLM Auto-Retry logic has been intentionally deferred to future updates to ensure the pipeline "fails fast" and broken parts remain visible for developer debugging.
 
 ## Phase 5: The Visual Command Center (The "Face")
-*Goal: Provide real-time transparency into the automation pipeline.*
-1.  **Pipeline Dashboard:** A new UI view with "Nodes" representing Ingestion, VLM, LLM, and Storage.
-2.  **Live State Monitoring:** Use WebSockets or Polling to show "Pulsing" animations on the active node.
-3.  **Extraction Preview:** Side-by-side view of the "Cleaned OCR Text" vs. "Final JSON" to see exactly how the model thought.
+*Goal: Provide real-time transparency into the automation pipeline with support for concurrent processing.*
+1.  **Multi-Track Progress Dashboard:** Replace the linear node graph with a multi-track progress UI. This allows independent tracking of the VLM (Vision) and LLM (Reasoning) engines as they work through different pages of a document.
+2.  **Live State Monitoring:** Use Server-Sent Events (SSE) to broadcast structured JSON updates (`engine`, `current_page`, `total_pages`).
+3.  **Extraction Preview:** Side-by-side view of the "Cleaned OCR Text" vs. "Final JSON" with 5 strict diagnostic stages for deep-dive debugging.
 
-## Phase 6: Agentic Expansion & SQL Persistence
+## Phase 6: Parallel Processing & Document Chat
+*Goal: Maximize throughput via concurrent execution and enable interactive document Q&A.*
+1.  **Concurrent Orchestration:** Update the backend to process multiple pages simultaneously (leveraging vLLM's continuous batching) while ensuring results remain ordered.
+2.  **Parallel Progress Tracking:** Refactor the UI to track absolute completion counts for VLM and LLM tracks, allowing smooth progress visualization even when pages finish out-of-order.
+3.  **Floating Chat Interface:** Build a responsive, floating chat overlay in the UI to interact with the processed document.
+4.  **Context-Aware Chat API:** Implement a stateless `/chat` endpoint that injects extracted JSON as context with strict token limits to prevent VRAM overflow.
+
+## Phase 7: Agentic Expansion & SQL Persistence
 *Goal: Graduate to a "Smart" system with self-correction and professional storage.*
 1.  **SQLite Migration:** Move from CSV to a proper SQLite database for fast querying and historical tracking.
 2.  **Self-Correction Agent (LangGraph/PydanticAI):** If math validation fails, an agent re-evaluates the page text and attempts a "Correction Loop."
@@ -78,3 +85,6 @@ Every step builds on the previous one. We will not move to Phase 6 until the Pha
 
 ---
 **Architectural Note (Phase 2.5 Update):** To solve LLM `max_tokens` truncation issues on massive tables and provide maximum transparency, the pipeline was updated to an "Unmerged Page-by-Page" strict isolation model. The `DocumentProcessor` now evaluates each page independently and returns a list of "Diagnostic Objects" (containing VLM Raw, Cleaned Text, and LLM JSON). The `index3.html` UI was overhauled into a "Glass Pipeline Diagnostics Dashboard" to allow the user to inspect every intermediate stage per page. Validation was relaxed to prevent missing continuation data (like Vendor names) from hiding the raw extracted JSON.
+
+---
+**Architectural Note (Phase 7 Update):** To maximize extraction accuracy, the project transitioned into an "Accuracy Optimization" phase. A standalone `/sandbox` directory was created, containing un-abstracted Jupyter Notebooks for rapid experimentation. `accuracy_lab.ipynb` allows tuning of decoding parameters (Temperature, Top-P) and Few-Shot prompting in isolation. `agent_lab.ipynb` serves as a proof-of-concept for the "Auditor Agent" loop, demonstrating how Python-based validation can trigger autonomous LLM self-correction to fix math errors and hallucinations before data reaches the persistence layer.

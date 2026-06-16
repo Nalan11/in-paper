@@ -3,10 +3,13 @@ import uuid
 import time
 import shutil
 import asyncio
+import json
 from fastapi import FastAPI, UploadFile, File, HTTPException, WebSocket, WebSocketDisconnect, Request
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from sse_starlette.sse import EventSourceResponse
+from pydantic import BaseModel
+from openai import AsyncOpenAI
 from src.engines.vlm import VLMEngine
 from src.engines.llm import LLMEngine
 from src.utils.text_processing import clean_ocr_text
@@ -15,6 +18,14 @@ from src.core.document_processor import DocumentProcessor
 from src.utils.cleanup import background_cleanup_task
 
 app = FastAPI(title="Invoice Intelligence API")
+
+# --- Async Client for Streaming Chat ---
+async_client = AsyncOpenAI(base_url="http://localhost:8001/v1", api_key="EMPTY")
+
+# --- Chat Models ---
+class ChatRequest(BaseModel):
+    message: str
+    document_context: list # The structured_data array
 
 # --- Status Broadcaster for Pipeline UI ---
 class StatusBroadcaster:
@@ -75,7 +86,7 @@ os.makedirs(TEMP_DIR, exist_ok=True)
 vlm_engine = VLMEngine()
 llm_engine = LLMEngine()
 process_manager = ProcessManager(log_dir=LOG_DIR)
-doc_processor = DocumentProcessor(vlm_engine, llm_engine)
+doc_processor = DocumentProcessor(vlm_engine, llm_engine, prompts_dir="src/prompts")
 
 # --- Endpoints ---
 
@@ -113,13 +124,13 @@ async def process_document(file: UploadFile = File(...)):
             shutil.copyfileobj(file.file, buffer)
 
         await broadcaster.broadcast("VLM_PROCESSING")
-        await asyncio.sleep(0.1) # Yield control to let broadcast go through
+        
+        # Capture the main event loop to bridge the background thread
+        loop = asyncio.get_running_loop()
 
         # 2. Process via Core Processor (handles PDF/Image + Merging)
-        # We need a small hack to run synchronous doc_processor.process asynchronously or just let it block.
-        # For true real-time SSE in FastAPI, long blocking calls freeze the event loop.
         # We use asyncio.to_thread to prevent blocking the SSE stream.
-        result_payload = await asyncio.to_thread(doc_processor.process, temp_path, req_temp_dir, broadcaster)
+        result_payload = await asyncio.to_thread(doc_processor.process, temp_path, req_temp_dir, broadcaster, loop)
         
         await broadcaster.broadcast("SAVING")
         total_duration = time.time() - start_total
@@ -130,6 +141,7 @@ async def process_document(file: UploadFile = File(...)):
         await broadcaster.broadcast("DONE")
         return {
             "structured_data": result_payload.get("diagnostic_pages", []),
+            "doc_type": result_payload.get("doc_type", "UNKNOWN"),
             "timings": {
                 "vlm_sec": round(result_payload.get("total_vlm_sec", 0), 2),
                 "llm_sec": round(result_payload.get("total_llm_sec", 0), 2),
@@ -159,11 +171,11 @@ async def get_server_status(server_type: str):
 async def start_server(server_type: str):
     if server_type == "vlm":
         success, msg = process_manager.start_server(
-            "vlm", "PaddlePaddle/PaddleOCR-VL", 8000, 0.40, 8192
+            "vlm", "PaddlePaddle/PaddleOCR-VL", 8000, 0.30, 32768
         )
     elif server_type == "llm":
         success, msg = process_manager.start_server(
-            "llm", "Qwen/Qwen2.5-1.5B", 8001, 0.30, 2048
+            "llm", "Qwen/Qwen3-4B-AWQ", 8001, 0.40, 8000 
         )
     else:
         raise HTTPException(status_code=400, detail="Invalid server type")
@@ -185,6 +197,50 @@ async def clear_logs(server_type: str):
         raise HTTPException(status_code=400, detail="Invalid server type")
     process_manager.clear_logs(server_type)
     return {"message": f"Logs cleared for {server_type}"}
+
+# --- Chat Endpoint (Streaming) ---
+
+@app.post("/chat")
+async def chat_with_document(request: ChatRequest):
+    """
+    Answers questions about the document context using a streaming generator.
+    """
+    async def event_generator():
+        try:
+            # 1. Format and Truncate context for safety
+            context_str = json.dumps(request.document_context, indent=1)
+            if len(context_str) > 15000:
+                context_str = context_str[:15000] + "\n... [DATA TRUNCATED DUE TO SIZE LIMIT]"
+            
+            system_prompt = f"""You are a helpful document assistant. 
+Answering questions based ONLY on the provided JSON data of an extracted document.
+If the information is not in the JSON, say 'I don't have that information'.
+Be concise and professional.
+
+DOCUMENT DATA:
+{context_str}"""
+
+            # 2. Start Streaming
+            response = await async_client.chat.completions.create(
+                model=llm_engine.model_name,
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": request.message}
+                ],
+                temperature=0.1,
+                max_tokens=1000, # Increased for longer chat answers
+                stream=True
+            )
+
+            async for chunk in response:
+                token = chunk.choices[0].delta.content
+                if token:
+                    yield token
+
+        except Exception as e:
+            yield f"⚠️ Chat Error: {str(e)}"
+
+    return EventSourceResponse(event_generator())
 
 # --- WebSocket Log Streaming ---
 

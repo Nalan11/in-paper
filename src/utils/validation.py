@@ -14,6 +14,13 @@ def attempt_json_recovery(truncated_json_str):
 
 def ensure_structure(data):
     """Ensures the extracted JSON has all required top-level keys."""
+    # GENERIC SAFETY NET: If the LLM returned literally anything other than a dictionary (like [])
+    if not isinstance(data, dict):
+        data = {
+            "requires_human_review": True,
+            "validation_errors": ["CRITICAL: LLM output was completely malformed or returned as an array."]
+        }
+        
     defaults = {
         "document_details": {},
         "vendor_details": {},

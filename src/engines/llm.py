@@ -3,61 +3,16 @@ import json
 from openai import OpenAI
 from src.utils.validation import attempt_json_recovery, validate_extraction
 
-SYSTEM_PROMPT = """You are a precise data extraction assistant specialized in financial documents.
-Extract information from the provided text and return it strictly as a JSON object.
-
-RULES:
-1. DATES: All dates MUST be converted to YYYY-MM-DD format.
-2. NUMBERS: Convert currency and quantities to float numbers (e.g., $1,200.50 -> 1200.50).
-3. NULLS: If a field is not present in the text, use null.
-4. NESTING: Follow the exact nested structure provided below to separate Vendor vs Client details.
-5. LINE ITEMS: Extract every row from tables into the line_items array.
-
-TARGET JSON SCHEMA:
-{
-  "document_details": {
-    "document_type": "string",
-    "invoice_number": "string",
-    "invoice_date": "YYYY-MM-DD",
-    "due_date": "YYYY-MM-DD"
-  },
-  "vendor_details": {
-    "company_name": "string",
-    "person_name": "string",
-    "address": "string",
-    "contact_info": "string"
-  },
-  "client_details": {
-    "company_name": "string",
-    "person_name": "string",
-    "address": "string",
-    "contact_info": "string"
-  },
-  "line_items": [
-    {
-      "description": "string",
-      "quantity": "float",
-      "unit_price": "float",
-      "line_total": "float"
-    }
-  ],
-  "financials": {
-    "subtotal": "float",
-    "tax_amount": "float",
-    "total_amount": "float"
-  }
-}"""
-
 class LLMEngine:
-    def __init__(self, server_url="http://localhost:8001/v1", model_name="Qwen3-4B-AWQ"):
+    def __init__(self, server_url="http://localhost:8001/v1", model_name="Qwen/Qwen3-4B-AWQ"):
         self.client = OpenAI(base_url=server_url, api_key="EMPTY")
         self.model_name = model_name
 
-    def extract(self, text):
+    def extract(self, text, system_prompt):
         start_time = time.time()
         
         messages_payload = [
-            {"role": "system", "content": SYSTEM_PROMPT + "\nBe as concise as possible to avoid truncation."},
+            {"role": "system", "content": system_prompt + "\nBe as concise as possible to avoid truncation."},
             {"role": "user", "content": f"Text to process:\n{text}"}
         ]
         

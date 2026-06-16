@@ -10,6 +10,7 @@ uploads/
 json_outputs/
 stress_results_llm/
 stress_results_vlm/
+daily_reports/
 
 
 *.txt
@@ -20,3 +21,5 @@ stress_results_vlm/
 .windsurf-server
 .wget-hsts
 vllm_engine/
+
+process.log
